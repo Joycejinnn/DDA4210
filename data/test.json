@@ -1,0 +1,722 @@
+[
+  {
+    "id": 369763,
+    "image": {
+      "path": "data/images/train2017/000000369763.jpg",
+      "width": 640,
+      "height": 289
+    },
+    "positive": [
+      "A polie officer standing next to a  motorcycle parked on the street.",
+      "A scene depicting a man sitting down on a curb and a motor cop writing a ticket",
+      "A man and police officer on the sidewalk next to a motorcycle.",
+      "A man sitting on a curb with a police officer behind him. ",
+      "A motorcycle police officer is writing a ticket."
+    ],
+    "negative": [
+      "A school bus with a front mirror next to a light pole.",
+      "A door open revealing a small bathroom with sink and toilet.",
+      "A giraffe and a zebra are in a grassy field.",
+      "A group of people at a bus stop boarding the bus.",
+      "A horse drawn carriage is parked along the curb.",
+      "A brightly colored fire hydrant sits beside a brightly colored curb."
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 455483,
+    "image": {
+      "path": "data/images/train2017/000000455483.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "A bathroom with two sinks and a shower.",
+      "a big bathroom that has some sinks in it",
+      "Bathroom vanity with double sinks and large mirrors.",
+      "A bathroom with sinks mirrors and tile flooring.",
+      "A bathroom that has two sinks next to each other."
+    ],
+    "negative": [
+      "A pitcher of beer stands next to a dish containing orange slices.",
+      "A bunch of motorcycles line up near trees.",
+      "A giraffe and a zebra are in their pen at the zoo.",
+      "A car with some surfboards in a field.",
+      "A man takes a picture of his reflection in a mirror. ",
+      "White bathroom area with a blue and white shower curtain. "
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 79472,
+    "image": {
+      "path": "data/images/train2017/000000079472.jpg",
+      "width": 640,
+      "height": 481
+    },
+    "positive": [
+      "Office space with office equipment on desk top.",
+      "A hope office setup of computers and printers.",
+      "a home office with laptop, printer, scanner, and extra monitor",
+      "The computer desk in the corner is by a window.",
+      "A laptop, monitor, printer and tablet on a desk."
+    ],
+    "negative": [
+      "A woman sits on her motorcycle in the street.",
+      "A skateboarder flipping his board on a street.",
+      "A giraffe standing next to three baby giraffes in a zoo exhibit.",
+      "An office desk in front of a large window overlooking a parking lot",
+      "A few people working on various computers in an office.",
+      "A man sitting in front of a laptop computer."
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 38029,
+    "image": {
+      "path": "data/images/train2017/000000038029.jpg",
+      "width": 640,
+      "height": 487
+    },
+    "positive": [
+      "A float in a parade on a sunny day.",
+      "a large fire hydrant on a truck ",
+      "Truck towing  wheeled hydrant in a parade",
+      "A parade has a float with a fire hydrant on it.",
+      "The jazz band is taking part in a parade."
+    ],
+    "negative": [
+      "A giraffe laying down on top of a dirt field.",
+      "A duck flying above a large body of water.",
+      "Group of sheep and mountain out front of old house.",
+      "Bicyclists on a city street, most not using the bike lane",
+      "A large group of motorcycles lined up on the street.",
+      "Two finch birds standing next to a basket of bread. "
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 165547,
+    "image": {
+      "path": "data/images/train2017/000000165547.jpg",
+      "width": 500,
+      "height": 368
+    },
+    "positive": [
+      "An eating area with a table and a few chairs.",
+      "Table situated in corner of room with a vase for a center piece",
+      "A wooden table sitting below a bunch of windows.",
+      "A dining room table next to windows overlooking woods",
+      "A wooden dining table is surrounded by windows."
+    ],
+    "negative": [
+      "A man riding on the back of a motorcycle.",
+      "People are riding scooters down the middle of the road.",
+      "A plane just outside of a terminal with other planes in the background.",
+      "A park bench with a broken board on one end.",
+      "A bowl of oatmeal is ready to eat with some cinnamon and sugar.",
+      "Chefs preparing food in a professional metallic style kitchen."
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 340559,
+    "image": {
+      "path": "data/images/train2017/000000340559.jpg",
+      "width": 428,
+      "height": 640
+    },
+    "positive": [
+      "There are two sinks next to two mirrors.",
+      "Two very metallic sinks are shown as well as the mirrors above them.",
+      "A room with stainless steel equipment including sinks and mirrors.",
+      "Two stainless steel sinks with mirrors and a fire extinguisher. ",
+      "A photo of a bathroom made of steel."
+    ],
+    "negative": [
+      "Blue and orange stone clock tower with a small clock.",
+      "A girl stepping onto a skateboard in the playground",
+      "A kitchen with cabinets, a stove, microwave and refrigerator.",
+      "some shelves filled with a bunch of different items in the bathroom\n",
+      "A bathroom with a tile floor, bathtub and shower and no shower curtain.",
+      "A kitchen filled with black appliances and lots of counter top space."
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 108169,
+    "image": {
+      "path": "data/images/train2017/000000108169.jpg",
+      "width": 500,
+      "height": 375
+    },
+    "positive": [
+      "a view of an air plane wing in the air ",
+      "Is this the inside of a building for skateboarding?",
+      "A yellow airplane wing pointed toward the ground?",
+      "An ariel view of a planet in space is shown.",
+      "landscape photo with plane wing at top and view of sandy hills showing rain gulleys"
+    ],
+    "negative": [
+      "A COMMERCIAL AIRPLANE FLYING ABOVE THE CITY AND MOUNTAIN",
+      "A fire hydrant in which someone put two eyes on it.",
+      "Bathroom vanity with double sinks and large mirrors.",
+      "a box of green bananas and a box of ripe bananas ",
+      "A child holding a flowered umbrella and petting a yak.",
+      "a line of parked motorcycles on some grass and trees"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 459374,
+    "image": {
+      "path": "data/images/train2017/000000459374.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "there are blue lights shining threw palm trees ",
+      "A fire hydrant pouring water from it with a neon blue glow to it.",
+      "Reflections of light streaming thru a building window at night.",
+      "a fire hydrant on a city street ",
+      "A yellow fire hydrant that is on the side of the street."
+    ],
+    "negative": [
+      "A car with some surfboards in a field.",
+      "A large clock tower with a wind indicator on top.",
+      "A parking meter on a street by a car with traffic.",
+      "A fire hydrant with a pair of eye stickers making a face on it.",
+      "An expanse of snow in the middle of dry plants",
+      "A red fire hydrant sitting next to a sandwich sign."
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 179558,
+    "image": {
+      "path": "data/images/train2017/000000179558.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "Two giraffes standing together in an open field zoo den",
+      "One giraffe licks the tree limb while the other looks at him strangely. ",
+      "Two giraffes lick a branch on a grassy field.",
+      "There are two giraffes standing next to a tree branch",
+      "Head of two giraffes with one slicking the bark on a tree."
+    ],
+    "negative": [
+      "A motorcycle in the foreground parked in a dirt parking lot",
+      "A close-up of a one-way street with many cars and motorcycles.",
+      "A man rides an elephant into a river.",
+      "A giraffe lying on the ground in a zoo pin.",
+      "A giraffe with a mouth full of grass in front of a forest.",
+      "A close up of a giraffe chewing on some hay."
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 513681,
+    "image": {
+      "path": "data/images/train2017/000000513681.jpg",
+      "width": 640,
+      "height": 469
+    },
+    "positive": [
+      "A man in a safety vest holds him arms up as he stands in front of an airplane.",
+      "an airport employee giving directions to an airplane",
+      "An air traffic controller directing an airplane on a busy runway.",
+      "A person reflective gear directing an airplane ",
+      "A person directing a white jet airliner with orange sticks."
+    ],
+    "negative": [
+      "A beautiful, open kitchen and dining room area features an island in the center and wood cabinets and large windows.",
+      "a green, warped bench outside of a small cottage with a flowers in the window",
+      "A bunch of giraffes that are standing in the grass.",
+      "A horse drawn carriage parked on the street.",
+      "A small plane flying through a cloudy blue sky.",
+      "three bicycle riders some trees and a pigeon"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 232262,
+    "image": {
+      "path": "data/images/train2017/000000232262.jpg",
+      "width": 640,
+      "height": 427
+    },
+    "positive": [
+      "an image of a cars driving on the highway",
+      "A section of traffic coming to a stop at an intersection.",
+      "A bunch of cars sit at the intersection of a street.",
+      "This is a picture of traffic on a very busy street.",
+      "A busy intersection filled with cars in asia"
+    ],
+    "negative": [
+      "Wooden spoons laid out across a kitchen table.",
+      "A woman eating vegetables in front of a stove.",
+      "Two giraffes rub their necks together as they stand by the trees in the sunlight. ",
+      "Two men on motorcycles at a stop light",
+      "A stoplight on a pole near a large building ",
+      "A computer that is on a desk near a window."
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 125059,
+    "image": {
+      "path": "data/images/train2017/000000125059.jpg",
+      "width": 480,
+      "height": 640
+    },
+    "positive": [
+      "A bathroom with a white toilet sitting next to a bathroom sink.",
+      "A bathroom vanity and toilet in a public restroom.",
+      "A view of a bathroom shows a toilet, sink and mirror.",
+      "A modern looking bathroom has a toilet and a sink. ",
+      "This bathroom has brown counter tops and a white toilet"
+    ],
+    "negative": [
+      "An ariel view of a planet in space is shown.",
+      "A fire hydrant in front of a snow covered field, a lake and mountain backdrop.",
+      "Two kids sitting at a wooden table eating chips.",
+      "A dining room table next to windows overlooking woods",
+      "A bunch of motorcycles parked on the side of the road",
+      "a person taking a photo in a mirror "
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 204805,
+    "image": {
+      "path": "data/images/train2017/000000204805.jpg",
+      "width": 500,
+      "height": 346
+    },
+    "positive": [
+      "A large boat filled with mean on wheels.",
+      "A bunch of people aboard a boat with wheels. ",
+      "A boat is being rolled on a trailer",
+      "A large boat full of men is sitting on a cart ",
+      "A boat full of people is on a trailer with wheels."
+    ],
+    "negative": [
+      "a close up of a toilet and a dust pale",
+      "A black and white image showing birds flying over a body of water.",
+      "A clock tower has a weather vane on top of it.",
+      "A smiling couple in wedding attire on a wooden bench.",
+      "A motorcycle parked on top of a sandy beach.",
+      "A man in a stone room possibly using the bathroom"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 309022,
+    "image": {
+      "path": "data/images/train2017/000000309022.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "A commercial stainless kitchen with a pot of food cooking. ",
+      "Some food sits in a pot in a kitchen. ",
+      "A kitchen has all stainless steel appliances and counters.",
+      "a kitchen with a sink and many cooking machines and a pot of food",
+      "Food cooks in a pot on a stove in a kitchen."
+    ],
+    "negative": [
+      "A small white toilet sitting next to a metal trash can.",
+      "A table and chairs with wooden kitchen tools on top.",
+      "a passenger jet plane beginning its ascent over a city in the mountains",
+      "an image of a kitchen setting with black appliances",
+      "A small beige bathroom with an additional medicine cabinet.",
+      "A narrow kitchen filled with appliances and cooking utensils."
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 5802,
+    "image": {
+      "path": "data/images/train2017/000000005802.jpg",
+      "width": 640,
+      "height": 479
+    },
+    "positive": [
+      "Two men wearing aprons working in a commercial-style kitchen.",
+      "Chefs preparing food in a professional metallic style kitchen.",
+      "Two people standing around in a large kitchen.",
+      "A commercial kitchen with two men working to prepare several plates.",
+      "two men in white shirts in a large steel kitchen"
+    ],
+    "negative": [
+      "Red and white small plane on partially cloudy day.",
+      "An orange cat hiding on the wheel of a red car.",
+      "A fire hydrant outside on a street covered in snow.",
+      "a street with some motorcycles driving through it",
+      "A big screen television is sitting on a stand in a room.",
+      "a woman smiles as a giraffe walks in the back ground "
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 250108,
+    "image": {
+      "path": "data/images/train2017/000000250108.jpg",
+      "width": 640,
+      "height": 481
+    },
+    "positive": [
+      "A computer that is on a desk near a window.",
+      "An office desk in front of a large window overlooking a parking lot",
+      "this is a desk with a computer on it",
+      "A corner desk with a laptop and other office equipment",
+      "A office desk,  with a view of a parking lot. "
+    ],
+    "negative": [
+      "A television is shown in the middle of a baggage claim area.",
+      " A basket of bread with a small bird eating it.",
+      "An orange bench surrounded by flood waters near a small metal grill.",
+      "A beautiful, open kitchen and dining room area features an island in the center and wood cabinets and large windows.",
+      "The woman in the kitchen is holding a huge pan.",
+      "A small section of a bathroom with dim lighting."
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 381021,
+    "image": {
+      "path": "data/images/train2017/000000381021.jpg",
+      "width": 476,
+      "height": 640
+    },
+    "positive": [
+      "a woman is on a poster hanging outside",
+      "A sign in a median is displaying an ad of a woman.",
+      "A city sidewalk billboard featuring a young woman.",
+      "A billboard on the median of an intersection.",
+      "City art installation showing a picture of a girl."
+    ],
+    "negative": [
+      "A giraffe and a zebra are on a grassy field.",
+      "Two giraffes are grazing side by side, but in opposite directions.",
+      "The bathroom wall needs to be resurfaced and painted.",
+      "A row of cars parked on a street with parking meters.",
+      "A child playing on a skateboard in a park.",
+      "The woman is taking a picture of herself and the giraffe. "
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 223648,
+    "image": {
+      "path": "data/images/train2017/000000223648.jpg",
+      "width": 480,
+      "height": 640
+    },
+    "positive": [
+      "Multiple wooden spoons are shown on a table top.",
+      "A table surrounded by chairs and filled with cooking utensils.",
+      "Wooden spoons laid out across a kitchen table.",
+      "Wooden spoons and forks are all over a table.",
+      "A table and chairs with wooden kitchen tools on top."
+    ],
+    "negative": [
+      "several young students working at a desk with multiple computers",
+      "Blue and orange stone clock tower with a small clock.",
+      "A couple of horses grazing in front of an estate.",
+      "A person sitting net to a TV on a sidewalk.",
+      "Two people in a shop looking at a bike.",
+      "a woman is holding a cat in her kitchen"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 150410,
+    "image": {
+      "path": "data/images/train2017/000000150410.jpg",
+      "width": 640,
+      "height": 427
+    },
+    "positive": [
+      "Man bending down to check out a model plain that is parked in the grass",
+      "Man behind a radio operated model airplane on the ground.",
+      "The man is crouched down with a small airplane model. ",
+      "a small red and white toy plane in the grass",
+      "A man smiles while kneeling beside a miniature airplane."
+    ],
+    "negative": [
+      "Two small lap dogs in a small bathroom.",
+      "A laptop, monitor, printer and tablet on a desk.",
+      "A red fire hydrant sitting next to a sandwich sign.",
+      "Bicyclists on a city street, most not using the bike lane",
+      "A CITY WITH SKY SCRAPERS AND CARS ON IT ",
+      "Large set of motorcycles all lined up down a street."
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 67868,
+    "image": {
+      "path": "data/images/train2017/000000067868.jpg",
+      "width": 640,
+      "height": 429
+    },
+    "positive": [
+      "A park bench submerged in water in a flood.",
+      "An orange bench surrounded by flood waters near a small metal grill.",
+      "A bench under water in a park that has been flooded ",
+      "The water of the river is muddy brown.",
+      "A red park bench sitting in the middle of a flooded area."
+    ],
+    "negative": [
+      "a bunch of motorcycles are parked tightly together",
+      "a street with some motorcycles driving through it",
+      "A bowl of oatmeal is ready to eat with some cinnamon and sugar.",
+      "A bench is in an overgrown yard by a hose.",
+      "A wooden bench sitting next to an entrance.",
+      "A lady reading a newspaper on a public bench outside."
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 337264,
+    "image": {
+      "path": "data/images/train2017/000000337264.jpg",
+      "width": 640,
+      "height": 427
+    },
+    "positive": [
+      "a couple of women  are in a kitchen",
+      "Two people standing in the kitchen of a home.",
+      "A group of people who are around a kitchen counter.",
+      "A group of people prepare dinner in the kitchen.",
+      "two women in a kitchen bottles and lights"
+    ],
+    "negative": [
+      "A yellow toilet with a red helmet on top of it.",
+      "A fire hydrant that is painted yellow and blue.",
+      "Two giraffes stroll past each other near a bush.",
+      "A parade has a float with a fire hydrant on it.",
+      "Heavy city traffic all going in one direction",
+      "A full perspective of a washroom with a sink. \n"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 163020,
+    "image": {
+      "path": "data/images/train2017/000000163020.jpg",
+      "width": 640,
+      "height": 492
+    },
+    "positive": [
+      "A ducks is flying over a body of water.",
+      "A duck is in the air flying over water.",
+      "A duck is flying low above the water.",
+      "A duck flying above a large body of water.",
+      "a white brown and green duck is flying over some water"
+    ],
+    "negative": [
+      "a man  taking a picture of himself in a bathroom mirror",
+      "A man sitting on a curb with a police officer behind him. ",
+      "A boy holding an umbrella while standing next to livestock.",
+      "A flock of white birds flying over small boats.",
+      "Several birds that are flying together over a body of water.",
+      "An older building with birds flying near it."
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 540186,
+    "image": {
+      "path": "data/images/train2017/000000540186.jpg",
+      "width": 621,
+      "height": 640
+    },
+    "positive": [
+      "A view of a very large bathroom with mirrored walls.",
+      "a corner bathroom with two sinks and a bathtub",
+      "A bathroom with a sink, shower and bathtub.",
+      "A large bathroom with cabinets, mirrors and a tub.",
+      "This bathroom has mirrors on the doors, cabinets, and a bathtub in the corner."
+    ],
+    "negative": [
+      "One giraffe licks the tree limb while the other looks at him strangely. ",
+      "A close up of a giraffe chewing on some hay.",
+      "A person on a street next to a motor bike.",
+      "A shelf with hygiene products in a bathroom.\n",
+      "A view of a bathroom with double sinks and carpeted floor.",
+      "A woman cutting a large white sheet cake."
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 436141,
+    "image": {
+      "path": "data/images/train2017/000000436141.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "The bathroom is clean and ready to be used. ",
+      "a small bathroom with a sink and a toilet.",
+      "A toilet, sink and mirror in the bathroom",
+      "Doorway view into bathroom with a sink and toilet.",
+      "A white toilet sitting next to a sink."
+    ],
+    "negative": [
+      "A jumbo jet plane in flight with a city in the background.",
+      "A bike is locked and hanging from a door.",
+      "A red fire hydrant gushing water onto a street.",
+      "a man taking a selfie in a little bathroom mirror ",
+      "A clean, spacious bathroom with a large shower stall.",
+      "A small white toilet sitting next to a sink."
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 580041,
+    "image": {
+      "path": "data/images/train2017/000000580041.jpg",
+      "width": 375,
+      "height": 500
+    },
+    "positive": [
+      "A city street filled with traffic and parking lights.",
+      "A full view of a late evening with many cars parked on the street.",
+      "A very dark street with cars and many wires above.",
+      "A car's break lights glow as it waits at a red-light at an intersection.",
+      "A street scene with cars, street signs, and many high wires."
+    ],
+    "negative": [
+      "there is a woman that is cutting a white cake",
+      "A woman wearing sun glasses standing next to a giraffe.",
+      "Man bending down to check out a model plain that is parked in the grass",
+      "An office desk in front of a large window overlooking a parking lot",
+      "A group of people standing at a corner looking across the street",
+      "A tasty looking treat hanging on a car antenna."
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 256668,
+    "image": {
+      "path": "data/images/train2017/000000256668.jpg",
+      "width": 375,
+      "height": 500
+    },
+    "positive": [
+      "A white urinal mounted to a bathroom wall.",
+      "A pair of kitchen tongs on top of a urinal.",
+      "Bathroom urinal with kitchen tongs on top behind plumbing.",
+      "A urinal in a bathroom with tongs on top of it.",
+      "a metal thing is sitting on top of a urinal"
+    ],
+    "negative": [
+      "A giraffe with a mouth full of grass in front of a forest.",
+      "A small lightweight airplane flying through the sky.",
+      "Girl in a tank top holding a kitten in her back yard",
+      "A cat standing on a toilet with an open lid.",
+      "Two dogs looking up at a camera in a bathroom.",
+      "a long beige bathroom with a door to a bedroom and another to the hallway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 332654,
+    "image": {
+      "path": "data/images/train2017/000000332654.jpg",
+      "width": 428,
+      "height": 640
+    },
+    "positive": [
+      "A yellow and blue fire hydrant sitting on a sidewalk.",
+      "A yellow and blue fire hydrant on the sidewalk.",
+      "A freeway sign states Las Vegas north in the background behind a yellow and blue fire hydrant",
+      "A brightly colored fire hydrant sits beside a brightly colored curb.",
+      "A fire hydrant that is painted yellow and blue."
+    ],
+    "negative": [
+      "A toilet sitting in a bathroom next to a sink.",
+      "A bunch of people aboard a boat with wheels. ",
+      "A bunch of bananas are sitting on the stand.",
+      "A glazed donut hanging from a metal rod.",
+      "A line of multiple buses parked along a wall.",
+      "a fire hydrant on a city street "
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 60623,
+    "image": {
+      "path": "data/images/train2017/000000060623.jpg",
+      "width": 640,
+      "height": 427
+    },
+    "positive": [
+      "A young girl inhales with the intent of blowing out a candle. ",
+      "A young girl is preparing to blow out her candle.",
+      "A kid is to blow out the single candle in a bowl of birthday goodness. ",
+      "Girl blowing out the candle on an ice-cream ",
+      "A little girl is getting ready to blow out a candle on a small dessert."
+    ],
+    "negative": [
+      "Small giraffe sitting on the ground while the sun hits its body.",
+      "This bathroom has brown counter tops and a white toilet",
+      "a street light has the red lights glowing",
+      "A giraffe extends his neck near an onlooker.",
+      "a big bathroom that has some sinks in it",
+      "a pitcher of liquid sitting on a table next to some sliced oranges"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 12448,
+    "image": {
+      "path": "data/images/train2017/000000012448.jpg",
+      "width": 427,
+      "height": 640
+    },
+    "positive": [
+      "A baby is laying down with a teddy bear.",
+      "A baby laying in a crib with a stuffed teddy bear.",
+      "A baby wearing gloves, lying next to a teddy bear",
+      "A baby stares to the left while taking a picture with a teddy bear lays beside it .",
+      "A baby lies on blue and green bedding next to a teddy bear."
+    ],
+    "negative": [
+      "A wooden bench sitting next to an entrance.",
+      "A red park bench sitting in the middle of a flooded area.",
+      "A cluttered room with a sink, a toilet and in industrial mop bucket.",
+      "A guy jumps in the air with his skateboard beneath him.",
+      "The shiny motorcycle is being shown on a display.",
+      "The giraffes crane their necks over the small fence because the fence is small and their necks are not small."
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 125476,
+    "image": {
+      "path": "data/images/train2017/000000125476.jpg",
+      "width": 640,
+      "height": 427
+    },
+    "positive": [
+      "A bench with potted plants sitting on top of it. ",
+      "A bench surrounded by different plants on ground and potted plants.",
+      "An empty red bench in an overgrown garden.",
+      "A bench is in an overgrown yard by a hose.",
+      "There is a metal and wood chair in a garden"
+    ],
+    "negative": [
+      "A bathroom with a vanity cabinet on the wrong wall",
+      "A picture of a man sitting on the sidewalk next to a television set and backpack.",
+      "A variety of traffic lights and road signs.",
+      "A kitchen made of mostly wood with a small desk with a laptop.",
+      "The water of the river is muddy brown.",
+      "A little girl has a bag of chips and a boy is smiling at her"
+    ],
+    "source": "coco"
+  }
+]
