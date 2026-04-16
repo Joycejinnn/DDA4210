@@ -9,10 +9,10 @@ import torch
 from sentence_transformers import SentenceTransformer, util
 
 # ================= Configuration Area =================
-INPUT_JSON_PATH = "data/val.json"
+INPUT_JSON_PATH = "data/train.json"
 
 # Output JSONL file (single unified format)
-OUT_PATH = "output/val_scores.jsonl"
+OUT_PATH = "output/train_scores.jsonl"
 
 CLIP_MODEL_ID = "sentence-transformers/clip-ViT-B-32"
 OLLAMA_API_URL = "http://localhost:11434/api/generate"
