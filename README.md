@@ -1,6 +1,47 @@
 # DDA4210 - 多教师知识蒸馏数据准备管道
 
-这是一个多教师知识蒸馏（Knowledge Distillation）数据准备管道，用于生成高质量的"软标签"和推理过程，以训练一个较小的学生模型（如Qwen2.5），特别优化用于仅CPU环境。
+## 数据结构
+
+本项目使用统一的JSON数据格式，包含图像、文本描述、CLIP评分、InternVL模型输出和标签信息。
+
+**示例数据：**
+```json
+{
+  "id": 407368,
+  "image_path": "data/images/train2017/000000407368.jpg",
+  "text": "Polar bear on rock near water in city zoo enclosure.",
+  "clip": {
+    "cosine": 0.3325,
+    "prob": 0.5893,
+    "rank": 1
+  },
+  "internvl": {
+    "score": 0.9,
+    "error_type": null,
+    "reason": "The image shows a polar bear on rocks near water in what appears to be a zoo enclosure with modern architecture and a distant tower."
+  },
+  "ground_truth": {
+    "label": 1
+  }
+}
+```
+
+**字段说明：**
+- `id`：数据样本的唯一标识符
+- `image_path`：图像文件的相对路径
+- `text`：对应图像的文本描述
+- `clip`：CLIP模型输出
+  - `cosine`：余弦相似度（0-1）
+  - `prob`：这一张图片下所有文本中此文本的softmax概率。prob越大说明与这张图片越相关。但是prob低也不代表文字不符合这张图片。
+  - `rank`：此文本在这组文本中与图片的相关排名（1为最相关）
+- `internvl`：InternVL模型输出
+  - `score`：模型评分（0-1）
+  - `error_type`：错误类型（null表示无错误），类型有"subject_mismatch", "attribute_mismatch", "spatial_mismatch", "scene_mismatch", "semantic_mismatch"
+  - `reason`：模型的推理过程和分析说明
+- `ground_truth`：标签信息
+  - `label`：真实标签（0或1）
+
+---
 
 ## 项目结构
 
@@ -147,7 +188,7 @@ pip install tqdm
 
 ### 3.2 准备输入数据
 
-在 `data/` 目录下放置你的数据文件
+在 `data/` 目录下放置你的数据文件，按照上方"数据结构"部分的格式组织JSON文件。
 
 ### 3.3 配置参数
 
