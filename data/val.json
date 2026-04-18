@@ -1,193 +1,85 @@
 [
   {
-    "id": 129001,
+    "id": 451872,
     "image": {
-      "path": "data/images/train2017/000000129001.jpg",
-      "width": 480,
-      "height": 640
-    },
-    "positive": [
-      "A bath tub sitting next to a sink in a bathroom.",
-      "The bathroom is clean and ready for us to use.",
-      "a bath tub sitting next to a sink ",
-      "A bathroom that has a shower curtain over a bathtub.",
-      "A bathroom with multicolored tile, bathtub and pedestal sink."
-    ],
-    "negative": [
-      "The computer desk in the corner is by a window.",
-      "A baby lies on blue and green bedding next to a teddy bear.",
-      "A boy holding an umbrella while standing next to livestock.",
-      "A bathroom with a tub and shower and a sink.",
-      "A toilet with a sink and the door opened",
-      "A bathroom that has two sinks next to each other."
-    ],
-    "source": "coco"
-  },
-  {
-    "id": 170629,
-    "image": {
-      "path": "data/images/train2017/000000170629.jpg",
-      "width": 640,
-      "height": 431
-    },
-    "positive": [
-      "A yellow bus is parked near people on the side of the road.",
-      "A yellow bus stopping at a bus stop in a city.",
-      "A bus stopped at a bus stop while passengers get on and off.",
-      "A group of people at a bus stop boarding the bus.",
-      "It doesn't appear that anyone is waiting on the bus."
-    ],
-    "negative": [
-      "A desert of bananas and cinnamon in two blue bowls.",
-      "A boat with flags and tents is docked next to a grassy bank.",
-      "a line of parked motorcycles on some grass and trees",
-      "A woman forks vegetables out of a bowl into her mouth. ",
-      "Three giraffes grazing from a bush over a fence.",
-      "Two photos of a person riding a bicycle on the side of the road."
-    ],
-    "source": "coco"
-  },
-  {
-    "id": 384213,
-    "image": {
-      "path": "data/images/train2017/000000384213.jpg",
-      "width": 375,
-      "height": 500
-    },
-    "positive": [
-      "A kitchen is shown with a variety of items on the counters.",
-      "A kitchen has the windows open and plaid curtains.",
-      "A kitchen with two windows and two metal sinks.",
-      "An older kitchen with cluttered counter tops but empty sink.",
-      "Glasses and bottles are placed near a kitchen sink."
-    ],
-    "negative": [
-      "A giraffe and a zebra are in a grassy field.",
-      "Two giraffes standing together in an open field zoo den",
-      "Window view from the inside of airplanes, baggage carrier and tarmac. ",
-      "Living room with flat screen TV and surround sound.",
-      "A group of people prepare dinner in the kitchen.",
-      "There are two sinks next to two mirrors."
-    ],
-    "source": "coco"
-  },
-  {
-    "id": 111076,
-    "image": {
-      "path": "data/images/train2017/000000111076.jpg",
-      "width": 640,
-      "height": 427
-    },
-    "positive": [
-      "A bathroom with a sink and toilet and a window.",
-      "A white bathroom with white fixtures and tile floor",
-      "A small white toilet sitting next to a sink.",
-      "Small bathroom with a toilet, shower, and small mirror. ",
-      "A bathroom contains a toilet and a sink."
-    ],
-    "negative": [
-      "a small herd of giraffe in an open field",
-      "Closeup of two street signs with various languages on them.",
-      "A park bench with a broken board on one end.",
-      "A man who is sitting at a table.",
-      "I picture of a bathroom with a stand up shower stall and a person's reflection in the mirror.",
-      "Interior bathroom scene with modern furnishings including a plant."
-    ],
-    "source": "coco"
-  },
-  {
-    "id": 251252,
-    "image": {
-      "path": "data/images/train2017/000000251252.jpg",
-      "width": 375,
-      "height": 500
-    },
-    "positive": [
-      "The shiny motorcycle is being shown on a display.",
-      "A motor bike parked inside of a building.",
-      "A parked motorcycle sitting next to a crowd.",
-      "White motorcycle on display inside a building with people looking on. ",
-      "A motorcycle sits displayed in a large shopping area."
-    ],
-    "negative": [
-      "a small air plane getting ready to take off .",
-      "A single park bench is by small trees.",
-      "a stop light that is out on a pole",
-      "Two people riding a motorcycle with hats and backpack down a street.",
-      "A car that is sitting near a green street light.",
-      "A girl smiles as she holds a kitty cat."
-    ],
-    "source": "coco"
-  },
-  {
-    "id": 364521,
-    "image": {
-      "path": "data/images/train2017/000000364521.jpg",
-      "width": 640,
-      "height": 426
-    },
-    "positive": [
-      "A red helmet is on a yellow toilet in the dirt.",
-      "A yellow toilet with a red helmet on top of it.",
-      "A yellow toilet with a red helmet above it.",
-      "A toilet sitting in an outdoor area with a helmet resting on top of it.",
-      "An old toilet sits in dirt with a helmet on top."
-    ],
-    "negative": [
-      "A ducks is flying over a body of water.",
-      "Bananas a tightly packed and boxed for delivery to the market.",
-      "A swan is floating down the river by the boat.",
-      "A white toilet sits on the front lawn.",
-      "A modern looking bathroom has a toilet and a sink. ",
-      "The bathroom is clean for the guests to use. "
-    ],
-    "source": "coco"
-  },
-  {
-    "id": 14869,
-    "image": {
-      "path": "data/images/train2017/000000014869.jpg",
-      "width": 640,
-      "height": 480
-    },
-    "positive": [
-      "A park bench siting next to a tree next to a  park.",
-      "Green park bench in front of a tree on a sunny day.",
-      "A lone public bench under a tree surrounded by other trees and grass.  ",
-      "A green slated park bench under a tree.",
-      "A green painted bench sitting underneath a tree."
-    ],
-    "negative": [
-      "Rows of motor bikes and helmets in a city",
-      "two small children playing next to a fired hydrant and holding a balloon",
-      "An old fashion above ground tub is shown with gold feet.",
-      "A man sitting on a modern bench talking on a phone.",
-      "An orange bench surrounded by flood waters near a small metal grill.",
-      "A man is sitting on a public bench on a busy city street."
-    ],
-    "source": "coco"
-  },
-  {
-    "id": 372938,
-    "image": {
-      "path": "data/images/train2017/000000372938.jpg",
+      "path": "data/images/train2017/000000451872.jpg",
       "width": 640,
       "height": 424
     },
     "positive": [
-      "A group of people riding on the back of a loaded red pickup truck.",
-      "A truck with a number of people and things in the back",
-      "Men are crowded on the back of a small overloaded pickup truck.",
-      "An old pick up truck over loaded with people and cargo.",
-      "A truck carries a large amount of items and a few people."
+      "Several elephants are in a habitat as heads are in the foreground.",
+      "A small gray elephant  standing in an exhibit at a zoo.",
+      "People are watching four elephants in a zoo.",
+      "Several elephants in zoo enclosure with onlookers watching.",
+      "An elephant in a zoo stands in front of the crowd."
     ],
     "negative": [
-      "A flock of small birds flying in the sky over the water.",
-      "Sheep are grazing in a snow dusted field. ",
-      "Picture of bathroom being remolded where sink has not been installed. ",
-      "A bus parked next to another bus at a bus stop.",
-      "A small child wearing headphones plays on the computer.",
-      "Three giraffe stand near each other close to a fence."
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 293554,
+    "image": {
+      "path": "data/images/train2017/000000293554.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "Woman outside playing a game of frisbee with a dog",
+      "a woman is playing frisbee with her dog ",
+      "A female plays frisbee with a dog near a campstove.",
+      "A woman and her dog play Frisbee at a campsite",
+      "A woman going to get an orange frisbee from a gray dog at a barbecue."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 546702,
+    "image": {
+      "path": "data/images/train2017/000000546702.jpg",
+      "width": 480,
+      "height": 640
+    },
+    "positive": [
+      "A fat gray tiger cat laying on top of  bed up against a pillow.",
+      "A cat sits on a white bed with sheets and pillows.",
+      "A cat spreads it's legs in the middle of a bed.",
+      "A cat sitting on a bed cleaning itself",
+      "A cat propped up with pillows sitting on a bed."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 430287,
+    "image": {
+      "path": "data/images/train2017/000000430287.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "That tub is usually one found in a nursing home.",
+      "A bathroom with a large bathtub, toilet, sink, mirror and a large clock.",
+      "Inside bathroom with a large clock face on the mirror.",
+      "a bath room with a sink a toilet and a bath tub",
+      "A bathroom with a tub, toilet and a sink."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
     ],
     "source": "coco"
   },
@@ -206,372 +98,1353 @@
       "An unattended motorcycle parked along a curb on roadway."
     ],
     "negative": [
-      "A toilet and a sink in a small bathroom.",
-      "A cat sitting on a wheel of a vehicle.",
-      "Mirror view of a bathroom with a sink and tub.",
-      "a young boy barefoot holding an umbrella touching the horn of a cow",
-      "Children sitting at computer stations on a long table.",
-      "A bathroom with a sink and toilet and a window."
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
     ],
     "source": "coco"
   },
   {
-    "id": 562150,
+    "id": 155885,
     "image": {
-      "path": "data/images/train2017/000000562150.jpg",
-      "width": 640,
-      "height": 516
-    },
-    "positive": [
-      "A little girl holding a kitten next to a blue fence.",
-      "Girl in a tank top holding a kitten in her back yard",
-      "A young girl is holding a small cat.",
-      "Girl with a yellow shirt holding a small cat",
-      "A girl smiles as she holds a kitty cat."
-    ],
-    "negative": [
-      "A white toilet sits on the front lawn.",
-      "A bathroom vanity and toilet in a public restroom.",
-      "A single park bench is by small trees.",
-      "Two birds perched on a bread basked on a table.",
-      "two women in a kitchen bottles and lights",
-      "A man takes a picture in the bathroom mirror\n"
-    ],
-    "source": "coco"
-  },
-  {
-    "id": 339974,
-    "image": {
-      "path": "data/images/train2017/000000339974.jpg",
-      "width": 427,
-      "height": 640
-    },
-    "positive": [
-      "A traffic signal sitting next to a street at night.",
-      "Traffic light at night, appearing very confusing. ",
-      "The electronic stop sign glows brightly at night time.",
-      "A variety of traffic lights and road signs.",
-      "There is a street light with two green arrows in different directions"
-    ],
-    "negative": [
-      "Window view from the inside of airplanes, baggage carrier and tarmac. ",
-      "A cat standing next to a pond with a duck.",
-      "A bike sits among bottles of wine on a shelf. ",
-      "Man talking on personal cell phone on a yellow and black bench.",
-      "Two people are riding a red bike down the street.",
-      "a stop light that is out on a pole"
-    ],
-    "source": "coco"
-  },
-  {
-    "id": 213687,
-    "image": {
-      "path": "data/images/train2017/000000213687.jpg",
-      "width": 640,
-      "height": 479
-    },
-    "positive": [
-      "Motorcycles driving down a wide city street nearing a white building.",
-      "A large building with many windows and people riding scooters nearby",
-      "People are riding scooters down the middle of the road.",
-      "People are riding electric scooters in front of a large building.",
-      "Many motorcycles riding in front of a KFC."
-    ],
-    "negative": [
-      "Interior bathroom scene with modern furnishings including a plant.",
-      "A park bench with a broken board on one end.",
-      "A blue bowl holding mashed bananas and oatmeal with a bottle of sugar and cinnamon sitting beside it.",
-      "A woman snaps a photo of people having fun in the courtyard.",
-      "A large boat filled with mean on wheels.",
-      "A person riding a motor cycle down a race track."
-    ],
-    "source": "coco"
-  },
-  {
-    "id": 193271,
-    "image": {
-      "path": "data/images/train2017/000000193271.jpg",
-      "width": 480,
-      "height": 320
-    },
-    "positive": [
-      "A kitchen filled with black appliances and lots of counter top space.",
-      "some brown cabinets a black oven a tea kettle and a microwave",
-      "A small kitchen with glass and wooden cabinets.",
-      "A modern style kitchen filled with may different items.",
-      "A kitchen with wooden cabinets and black appliances."
-    ],
-    "negative": [
-      "A clean toilet in a bathroom with a cement floor.",
-      "a small air plane getting ready to take off .",
-      "A series of motorbikes parked in a row on a street",
-      "An office desk in front of a large window overlooking a parking lot",
-      "A door opens to a bare, white bathroom. ",
-      "A woman cooking in a kitchen with granite counters."
-    ],
-    "source": "coco"
-  },
-  {
-    "id": 472621,
-    "image": {
-      "path": "data/images/train2017/000000472621.jpg",
-      "width": 640,
-      "height": 298
-    },
-    "positive": [
-      "An elegant bathroom features a tub, sink, mirror, and decorations. ",
-      "An old fashion above ground tub is shown with gold feet.",
-      "A lovely, vintage-styled bathroom with a great claw-footed tub. ",
-      "Bathroom with a pedestal sink and claw foot bathtub",
-      "A claw foot tub is in a large bathroom near a pedestal sink."
-    ],
-    "negative": [
-      "A large boat filled with mean on wheels.",
-      "A dirt path with a young person on a motor bike rests to the foreground of a verdant area with a bridge and a background of cloud-wreathed mountains. ",
-      "A green wooden bench in front of a house.",
-      "A table surrounded by chairs and filled with cooking utensils.",
-      "A bathroom contains a toilet and a sink.",
-      "A small section of a bathroom with dim lighting."
-    ],
-    "source": "coco"
-  },
-  {
-    "id": 540763,
-    "image": {
-      "path": "data/images/train2017/000000540763.jpg",
-      "width": 425,
-      "height": 640
-    },
-    "positive": [
-      "A restroom has a toilet and a decorative sun wall plaque.",
-      "A picture of a very nice and white toilet.",
-      "A bathroom with a white toilet in the middle of the wall and a sun wall decor above it.",
-      "A bath room with a sun decoration above the toilet",
-      "A bathroom has a sun decal on the wall."
-    ],
-    "negative": [
-      "A tall giraffe standing in a lush green field.",
-      "Bananas a tightly packed and boxed for delivery to the market.",
-      "A giraffe and zebra in field next to a fence and building.",
-      "A room under construction with an unfinished shower and plumbing for the sink.",
-      "A white toilet and some tissue in a room.",
-      "Picture of bathroom being remolded where sink has not been installed. "
-    ],
-    "source": "coco"
-  },
-  {
-    "id": 32907,
-    "image": {
-      "path": "data/images/train2017/000000032907.jpg",
-      "width": 640,
-      "height": 480
-    },
-    "positive": [
-      "a toilet on the ground outdoors in front of a house",
-      "A toilet sitting in the middle of the road beside a home. ",
-      "A toilet on the pavement in front of a house, the tank lid lying discarded.",
-      "An old looking toilet sitting out on the side walk.",
-      "A toilet sitting in front of someones house. "
-    ],
-    "negative": [
-      "A hope office setup of computers and printers.",
-      "A bunch of motorcycles that are grouped together.",
-      "A young man wearing black attire and a flowered tie is standing and smiling.",
-      "Two men on motorcycles at a stop light",
-      "People are waiting on a corner to cross a street. ",
-      "A fire hydrant that is painted yellow and blue."
-    ],
-    "source": "coco"
-  },
-  {
-    "id": 113588,
-    "image": {
-      "path": "data/images/train2017/000000113588.jpg",
-      "width": 425,
-      "height": 640
-    },
-    "positive": [
-      "several young students working at a desk with multiple computers",
-      "A young man at his workstation examines the monitor of a lap top, with one hand on the keyboard and the other on the mouse.",
-      "A man is working on a laptop next to other computers.",
-      "People in a large room, use multiple computers.",
-      "A young professional is working at his laptop while his coworker is reading material."
-    ],
-    "negative": [
-      "a bathroom with a blue dustpan and broom on the floor ",
-      "A large number of green and yellow bananas in wooden containers.",
-      "A school bus with a front mirror next to a light pole.",
-      "a couple of women  are in a kitchen",
-      "a back ally neighborhood with motor bikes in a row",
-      "Man riding a motor bike on a dirt road on the countryside."
-    ],
-    "source": "coco"
-  },
-  {
-    "id": 75051,
-    "image": {
-      "path": "data/images/train2017/000000075051.jpg",
+      "path": "data/images/train2017/000000155885.jpg",
       "width": 500,
-      "height": 375
+      "height": 346
     },
     "positive": [
-      "A small white toilet sitting next to a metal trash can.",
-      "A compact toilet and shower of a small bathroom",
-      "A close up shot of a white toilet and waste bin.",
-      "A small white toilette with the lid closed has a metal trash can on one side and a shower stall on the other.",
-      "a toilet bowl and a trash can in a bathroom"
+      "A flock of white birds flying over small boats.",
+      "Many birds flying over some boats in the water.",
+      "A harbor with boats and lots of birds flying around.",
+      "a black and white picture of seagulls flying over a body of water.",
+      "A lot of white birds flying around boats."
     ],
     "negative": [
-      "A person sitting at a table in a room.",
-      "It doesn't appear that anyone is waiting on the bus.",
-      "A herd of sheep standing on top of snow covered field.",
-      "A white toilet and some tissue in a room.",
-      "A toilet sitting in a bathroom next to a mirror.",
-      "A man looking down with a backpack on in a house."
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
     ],
     "source": "coco"
   },
   {
-    "id": 455859,
+    "id": 185768,
     "image": {
-      "path": "data/images/train2017/000000455859.jpg",
+      "path": "data/images/train2017/000000185768.jpg",
+      "width": 514,
+      "height": 640
+    },
+    "positive": [
+      "A Daily Mirror featuring stories on celebrity stuffed animals.",
+      "A man in a safety jacket stands next to a large stuffed bear like creature.",
+      "A tabloid magazine with a stuffed bear in handcuffs.",
+      "You can always rely on this newspaper to print the latest gossip.",
+      "A newspaper with cartoon characters on the cover. "
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 209868,
+    "image": {
+      "path": "data/images/train2017/000000209868.jpg",
+      "width": 612,
+      "height": 612
+    },
+    "positive": [
+      "A child leans into the camera brushing their teeth. ",
+      "A young girl is lathered up with toothpaste.",
+      "Young person brushing their teeth with lots of toothpaste",
+      "A young girl brushing her teeth with a toothbrush and tooth paste.",
+      "The girl is brushing her teeth and toothpaste and it is foaming up."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 327807,
+    "image": {
+      "path": "data/images/train2017/000000327807.jpg",
       "width": 640,
       "height": 480
     },
     "positive": [
-      "A little girl in a pink shirt standing near a blue metal sculpture.",
-      "People are standing outside in a busy city street.",
-      "Woman taking a picture of someone standing behind a sculpture and a child pushing another woman towards the sculpture. ",
-      "People in a inner city courtyard watching a performance. ",
-      "A woman snaps a photo of people having fun in the courtyard."
+      "A small group of people standing outside of a train next to  small shops selling fruit.",
+      "A woman in a dress standing next to a blue and white train.",
+      "A woman poses for a picture next to a train and a fruit stand.",
+      "Women and men walking along a blue passenger train on a stone walkway. near an outdoor food market.",
+      "A woman posing by a train with several small food stands nearby."
     ],
     "negative": [
-      "A bathroom with a walk in shower currently under repair.",
-      "A green wooden bench in front of a house.",
-      "A filed with brown horses standing next to a church.",
-      "A young man wearing black attire and a flowered tie is standing and smiling.",
-      "A skateboarder flipping his board on a street.",
-      "A group of people standing at a corner looking across the street"
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
     ],
     "source": "coco"
   },
   {
-    "id": 281455,
+    "id": 311913,
     "image": {
-      "path": "data/images/train2017/000000281455.jpg",
-      "width": 640,
-      "height": 640
-    },
-    "positive": [
-      "A flock of small birds flying in the sky over the water.",
-      "Several birds that are flying together over a body of water.",
-      "A flock of birds flying over a field.",
-      "A black and white image showing birds flying over a body of water.",
-      "A group of birds flying over the water"
-    ],
-    "negative": [
-      "A small section of a bathroom with dim lighting.",
-      "Motorcycles are lined up outside along the street. ",
-      "A sign in a median is displaying an ad of a woman.",
-      "A bird is eating bread from a basket on a table.",
-      "A boat that is decorated with flags on the water. ",
-      "Bread sitting in a basket on a table beside a newspaper. "
-    ],
-    "source": "coco"
-  },
-  {
-    "id": 32992,
-    "image": {
-      "path": "data/images/train2017/000000032992.jpg",
+      "path": "data/images/train2017/000000311913.jpg",
       "width": 640,
       "height": 427
     },
     "positive": [
-      "A picture of a wooden container with crosses on it.",
-      "a close up of wood decorated with crosses",
-      "close up of a wooden base with crosses designed on the neck",
-      "A close up shut off some sort of religious object. ",
-      "A shiny wooden object is decorated with crosses."
+      "A pair of horses running through a grassy field",
+      "Two horses running inside a grassy fenced pasture.",
+      "Brown and white horses running through a grassy field. ",
+      "an image of two horses that are running thru the fields",
+      "two horses in a field of tall grass with trees in the background"
     ],
     "negative": [
-      "A giraffe awkwardly sips water from a puddle in the dirt road.",
-      "A tall giraffe eating leaves off a tree",
-      "A photograph of a bathroom undergoing major renovations.",
-      "A bathroom with a walk-in closet and a jacuzzi tub.",
-      "White tiled bathroom with a vanity tub and white flowers.",
-      "A kitchen made of mostly wood with a small desk with a laptop."
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
     ],
     "source": "coco"
   },
   {
-    "id": 410437,
+    "id": 553667,
     "image": {
-      "path": "data/images/train2017/000000410437.jpg",
+      "path": "data/images/train2017/000000553667.jpg",
       "width": 640,
-      "height": 424
+      "height": 427
     },
     "positive": [
-      "A red fire hydrant sitting next to a sandwich sign.",
-      "A fire hydrant and sign covered in snow",
-      "A fire hydrant near a sign that is covered with sticky snow.",
-      "A fire hydrant outside on a street covered in snow.",
-      "A snow covered city street featuring a red fire hydrant"
+      "A young woman taking a bite of food",
+      "A young girl is eating a messy sandwich.",
+      "A black child who is enjoying a sandwich.",
+      "A child bites into a sandwich with gusto.",
+      "an african american child wearing a green shirt eating a sandwich"
     ],
     "negative": [
-      "A toilet and a sink in a small bathroom.",
-      "a stop light that is out on a pole",
-      "A lone giraffe that is getting a drink of water from a small pond.",
-      "There are mountains in the background and a lake in the middle.",
-      "bike riders passing Burger King in city street",
-      "A fire hydrant that is painted yellow and blue."
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
     ],
     "source": "coco"
   },
   {
-    "id": 294832,
+    "id": 59202,
     "image": {
-      "path": "data/images/train2017/000000294832.jpg",
-      "width": 640,
-      "height": 429
+      "path": "data/images/train2017/000000059202.jpg",
+      "width": 426,
+      "height": 640
     },
     "positive": [
-      "A bathroom with an enclosed shower next to a sink and a toilet.",
-      "A clean, spacious bathroom with a large shower stall.",
-      "There are a toilet, a sink, and a shower stall in a large bathroom.",
-      "A bathroom featuring a walk in shower, mirror, sink and toilet.",
-      "Bathroom with a shower, sink, and toilet in it. "
+      "A skateboarder is near the edge of a skateboard ledge.",
+      "A man is skateboarding in a skate park. ",
+      "Teenagers are watching a boy skateboard on a skateboard ramp. ",
+      "A man on his skateboard riding ramps at a skating event. ",
+      "A guy on a skate board on a big ramp."
     ],
     "negative": [
-      "An ariel view of a planet in space is shown.",
-      "A woman on a motorcycle in the middle of the street.",
-      "a large air plane is parked out on a grass field",
-      "a bathroom with a toilet, sink, cabinet and mirror",
-      "A cluttered room with a sink, a toilet and in industrial mop bucket.",
-      "A bathroom with a tile floor, bathtub and shower and no shower curtain."
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
     ],
     "source": "coco"
   },
   {
-    "id": 227125,
+    "id": 568623,
     "image": {
-      "path": "data/images/train2017/000000227125.jpg",
+      "path": "data/images/train2017/000000568623.jpg",
+      "width": 640,
+      "height": 416
+    },
+    "positive": [
+      "A man sitting on a large bench talking on a cell phone.",
+      "A man sitting on a modern bench talking on a phone.",
+      "A man sitting on a black and yellow bench on the phone.",
+      "A man is sitting on a public bench on a busy city street.",
+      "Man talking on personal cell phone on a yellow and black bench."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 403065,
+    "image": {
+      "path": "data/images/train2017/000000403065.jpg",
+      "width": 500,
+      "height": 332
+    },
+    "positive": [
+      "A beach patrol vehicle thats performing his duties on the beach.",
+      "A beach patrol jeep drives along the sand as people wade and fly kites down the beach.",
+      "a white truck is driving down the beach",
+      "Many people and a car are on a beach",
+      "A car with a load on top drives down a foggy beach."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 8665,
+    "image": {
+      "path": "data/images/train2017/000000008665.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "One bird that looks like two different ones.",
+      "A bird with red and grey feathers on a table.",
+      "The colorful bird is standing on the table outside.",
+      "A gray and red bird sitting on top of a table.",
+      "A woodpecker that is sitting on top of a table."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 132615,
+    "image": {
+      "path": "data/images/train2017/000000132615.jpg",
+      "width": 640,
+      "height": 427
+    },
+    "positive": [
+      "A baseball player is swinging and about to run. ",
+      "A man in a baseball outfit is wearing a hard hat and is swinging his bat while the catcher has his mitt out ready to catch it.",
+      "a baseball player swings a bat at a baseball",
+      "A person on a field with a baseball bat.",
+      "A batter hits the ball during a Little League baseball game."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 39540,
+    "image": {
+      "path": "data/images/train2017/000000039540.jpg",
+      "width": 612,
+      "height": 612
+    },
+    "positive": [
+      "A full veggie pizza near a couple of plate of fries, are all ready to be eaten. ",
+      "A pizza with multiple toppings including an egg.  ",
+      "Closeup of a white plate holding a pizza next to plate of fries.",
+      "A pizza sitting on top of a pan covered in cheese and vegetables.",
+      "A pizza pie with vegetables of some sort on it."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 171500,
+    "image": {
+      "path": "data/images/train2017/000000171500.jpg",
+      "width": 640,
+      "height": 426
+    },
+    "positive": [
+      "Commercial logging transport truck on dirt road near forest.",
+      "A truck that is sitting on a dirt road.",
+      "A truck traveling down a road with a pile of logs in the back of it.",
+      "A large truck travelling on a dirt road near trees. ",
+      "A semi-truck loaded with logs driving down a dirt road."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 75083,
+    "image": {
+      "path": "data/images/train2017/000000075083.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "a close up of street signs with buildings in the background",
+      "A Pole with a bunch of different street signs ",
+      "A street sign for Broadway has several other signs on it.",
+      "A street sign marking the corner of Broadway and Broome. ",
+      "A traffic light with lots of street signs mounted to it."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 144200,
+    "image": {
+      "path": "data/images/train2017/000000144200.jpg",
+      "width": 640,
+      "height": 412
+    },
+    "positive": [
+      "broccoli being sauteed in a pan with a wooden spoon",
+      "A pot of vegetables cooking on the stove.",
+      "Broccoli stir fry in a frying pan on the stove ",
+      "A wooden spoon accompanied by a cooking pan filled with stir-fried broccoli and onions.",
+      "A wooden spoon stirs vegetables cooking in a pan. "
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 349737,
+    "image": {
+      "path": "data/images/train2017/000000349737.jpg",
+      "width": 640,
+      "height": 425
+    },
+    "positive": [
+      "A computer on a table with all kinds of bottles and other items.",
+      "A computer monitor sitting next to a  keyboard.",
+      "a monitor that is on a big white counter",
+      "A computer station with monitor, keyboard and personal items.",
+      "A computer monitor and keyboard sit on a counter with other objects."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 457754,
+    "image": {
+      "path": "data/images/train2017/000000457754.jpg",
+      "width": 640,
+      "height": 448
+    },
+    "positive": [
+      "Four men are photographed signing important documents at work.",
+      "Two men are standing behind two other men who are signing papers.",
+      "Four men in a suit are posing for a picture.",
+      "A group of men in suits sitting in a room preparing to sign some documents.",
+      "The men sit at the table with books in front of them. "
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 558524,
+    "image": {
+      "path": "data/images/train2017/000000558524.jpg",
+      "width": 480,
+      "height": 640
+    },
+    "positive": [
+      "The large, very old jar is on display behind glass.",
+      "An intricately designed vase is shown in a glass case.",
+      "Detailed vase on display on a white pedestal. ",
+      "A vase sitting on a small table as a display in a room ",
+      "A brown and gold antique vase being displayed."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 86320,
+    "image": {
+      "path": "data/images/train2017/000000086320.jpg",
+      "width": 500,
+      "height": 336
+    },
+    "positive": [
+      "A bathroom sink sitting under a large mirror.",
+      "A bathroom with a vanity cabinet on the wrong wall",
+      "A small beige bathroom with an additional medicine cabinet.",
+      "A bathroom sink with a mirror and medicine cabinet.",
+      "THERE IS A BATHROOM WITH A SINK AND A MIRROR"
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 283064,
+    "image": {
+      "path": "data/images/train2017/000000283064.jpg",
+      "width": 640,
+      "height": 427
+    },
+    "positive": [
+      "A table with a huge glass vase and fake flowers come out of it.",
+      "A plant in a vase sits at the end of a table.",
+      "A vase with flowers in it with long stems sitting on a table with candles. ",
+      "Flowers in a clear vase sitting on a table.",
+      "A large centerpiece that is sitting on the edge of a dining table."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 61181,
+    "image": {
+      "path": "data/images/train2017/000000061181.jpg",
+      "width": 500,
+      "height": 321
+    },
+    "positive": [
+      "This shot is of a crowded highway full of traffic",
+      "there are many taxi cabs on the road",
+      "A city street with lots of traffic and lined with buildings.",
+      "Heavy city traffic all going in one direction",
+      "Many cars stuck in traffic on a high way"
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 153570,
+    "image": {
+      "path": "data/images/train2017/000000153570.jpg",
+      "width": 640,
+      "height": 425
+    },
+    "positive": [
+      "female surfer riding a large ocean wave on a surfboard ",
+      "A girl rides a surfboard on a large wave. ",
+      "A man riding on top of a surfboard on top of a wave.",
+      "A surfer is riding a wave in a greyscale picture.",
+      "A person surfing on a wave that is crashing."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 395405,
+    "image": {
+      "path": "data/images/train2017/000000395405.jpg",
+      "width": 640,
+      "height": 428
+    },
+    "positive": [
+      "A living room filled with furniture and a table.",
+      "a living room next to a tiny breakfast nook ",
+      "No body has been in the lving room or dining room since it has been cleaned",
+      "a living room that has a couch and a rug in it",
+      "Living room and kitchen with furniture and sun shinning through window. "
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 565797,
+    "image": {
+      "path": "data/images/train2017/000000565797.jpg",
+      "width": 640,
+      "height": 454
+    },
+    "positive": [
+      "An orange striped tabby cat laying on top of a red vehicle's wheel.",
+      "a cat with a big fluffy tail sitting on top of a car tire ",
+      "A cat sitting on a wheel of a vehicle.",
+      "A cat hiding in a fender well of a car. ",
+      "An orange cat hiding on the wheel of a red car."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 309022,
+    "image": {
+      "path": "data/images/train2017/000000309022.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "A commercial stainless kitchen with a pot of food cooking. ",
+      "Some food sits in a pot in a kitchen. ",
+      "A kitchen has all stainless steel appliances and counters.",
+      "a kitchen with a sink and many cooking machines and a pot of food",
+      "Food cooks in a pot on a stove in a kitchen."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 235788,
+    "image": {
+      "path": "data/images/train2017/000000235788.jpg",
+      "width": 640,
+      "height": 427
+    },
+    "positive": [
+      "A vintage VW bus that is red and white.",
+      "A VW bus parked at a park picnic ",
+      "a van parked in a field near other cars ",
+      "A red Volks Wagon in a car show. \n",
+      "THIS IS A AWESOME PHOTO OF A VOLKSWAGON BUS"
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 503311,
+    "image": {
+      "path": "data/images/train2017/000000503311.jpg",
+      "width": 333,
+      "height": 500
+    },
+    "positive": [
+      "The kite surfer is walking on the beach holding the kite.",
+      "A man flying a kite over a sandy beach.",
+      "A man flying a kite while walking on the beach. ",
+      "A man carrying something and flying a kite with his other hand.",
+      "A man holding kite down by the ocean."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 386146,
+    "image": {
+      "path": "data/images/train2017/000000386146.jpg",
+      "width": 640,
+      "height": 427
+    },
+    "positive": [
+      "A couple of birds perched on poles sticking out of a lake.",
+      "Two birds sitting on wooden posts in water.",
+      "Two similar, small birds sit on posts in a lake.",
+      "Two birds sitting on top of wood poles",
+      "Two birds perched on sticks on the water."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 285291,
+    "image": {
+      "path": "data/images/train2017/000000285291.jpg",
+      "width": 500,
+      "height": 334
+    },
+    "positive": [
+      "A young lady riding skis down a snow covered slope.",
+      "a kid that is skiing down a snowy hill",
+      "A young child learning how to ski down a slope.",
+      "A girl in red skiing on a very snowy mountain",
+      "A young person in a red winter suit skiing down a snow covered hill."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 436795,
+    "image": {
+      "path": "data/images/train2017/000000436795.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "A man eating a hotdog in a kitchen",
+      "A man eating a hot dog inside of a room.",
+      "A man eating bread in a restaurant ",
+      "There is a man that is eating something and looking at sosthing",
+      "A guy makes a weird face as he eats what looks like a hot dog."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 386164,
+    "image": {
+      "path": "data/images/train2017/000000386164.jpg",
+      "width": 480,
+      "height": 640
+    },
+    "positive": [
+      "A wooden ball on top of a wooden stick.",
+      "The table is full of wooden spoons and utensils.",
+      "A wood table holding an assortment of wood cooking utensils.",
+      "A selection of wooden kitchen tools on a counter.",
+      "Wooden spoons are lined up on a table"
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 440646,
+    "image": {
+      "path": "data/images/train2017/000000440646.jpg",
+      "width": 640,
+      "height": 432
+    },
+    "positive": [
+      "A woman putting a tie on a man as he sit at a table.",
+      "a close up of a person getting a tie put on them",
+      "A man in a suit having his neck tie adjusted.",
+      "A man having a bow tie put onto his neck.",
+      "a woman helping a mani with his bow tie "
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 189845,
+    "image": {
+      "path": "data/images/train2017/000000189845.jpg",
+      "width": 500,
+      "height": 400
+    },
+    "positive": [
+      "a women that is walking down a sidwalk",
+      "Young woman walking down the sidewalk with cell phone",
+      "The woman in high heels is looking at her phone",
+      "A woman walking down the street looking at her phone",
+      "A woman walking down the sidewalk with a cell phone in her hand."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 93201,
+    "image": {
+      "path": "data/images/train2017/000000093201.jpg",
+      "width": 640,
+      "height": 425
+    },
+    "positive": [
+      "A dog with a hat on top of his head.",
+      "A small white dog wearing a black hat. ",
+      "a white dog panting wearing a black hat",
+      "a close up of a dog wearing a hat",
+      "A white dog wearing a black hat with it's tongue hanging out."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 476597,
+    "image": {
+      "path": "data/images/train2017/000000476597.jpg",
+      "width": 500,
+      "height": 375
+    },
+    "positive": [
+      "Two men are talking to each other near a fish tank. ",
+      "Some people standing together in a small room.",
+      "A group of people standing next to each other in a room.",
+      "Two guys and a girl standing near the bookshelf having a conversation by the fish tank",
+      "These three people are dressed up in costumes. "
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 281533,
+    "image": {
+      "path": "data/images/train2017/000000281533.jpg",
+      "width": 640,
+      "height": 434
+    },
+    "positive": [
+      "A dog watches an animal on the television.",
+      "Large brown dog facing away, watching TV with wildlife scene.",
+      "A big brown dog is watching a television.",
+      "The hound dog sits on a rug and watches another dog on the television set.",
+      "A dog is sitting in front of a television."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 104025,
+    "image": {
+      "path": "data/images/train2017/000000104025.jpg",
+      "width": 500,
+      "height": 321
+    },
+    "positive": [
+      "Person riding on the back of a horse on a gravel road. ",
+      "a person riding a horse down a trail with rocks around it ",
+      "A person riding a donkey travels between two mountains.",
+      "A man travels down a path in the mountains. ",
+      "a person in a black top riding a horse and some hills and rocks "
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 94590,
+    "image": {
+      "path": "data/images/train2017/000000094590.jpg",
+      "width": 640,
+      "height": 425
+    },
+    "positive": [
+      "A bunch of doughnuts that are on a plate.",
+      "There is a variety of donuts on a plate.",
+      "A plate of several kinds of donuts on a wooden table",
+      "a plate with a bunch of doughnuts on it ",
+      "A plate that has various types of donuts on it."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 216273,
+    "image": {
+      "path": "data/images/train2017/000000216273.jpg",
+      "width": 640,
+      "height": 427
+    },
+    "positive": [
+      "A small white dog sitting on the floor on top of a rug.",
+      "A wooly, white dog sitting on the carpet",
+      "A white dog has curly matted hair in it's eyes.",
+      "A small beige dog with short curly hair.",
+      "A shaggy dog sit atop a blue and pink carpet."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 421010,
+    "image": {
+      "path": "data/images/train2017/000000421010.jpg",
+      "width": 640,
+      "height": 427
+    },
+    "positive": [
+      "Two women having lunch together while man stood by them.",
+      "Two women sitting at an outdoor table at a restaurant",
+      "Two women sit at a table as a young man looks on.",
+      "A man standing at a table with two women.",
+      "A couple of women sitting at a table having drinks."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 279024,
+    "image": {
+      "path": "data/images/train2017/000000279024.jpg",
+      "width": 478,
+      "height": 640
+    },
+    "positive": [
+      "Putting a used toilet out with the trash is certainly not appropriate.",
+      "A ceramic toilet filled with empty drink cans amongst other rubbish on a city street ",
+      "Recyclable material in garbage bags are left outside.",
+      "a bunch of trash and a toilet sitting on a curb ",
+      "A bundle of trash with a toilet basin, polythenes and bottles"
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 317595,
+    "image": {
+      "path": "data/images/train2017/000000317595.jpg",
+      "width": 640,
+      "height": 432
+    },
+    "positive": [
+      "three guys sitting down eating sandwiches and smiling",
+      "Three men eating sandwiches at a corner table.",
+      "Two young men one old enjoying a meal at a restaurant ",
+      "Three men all eating sub sandwiches at a restaurant. ",
+      "Three men are sitting in a restaurant eating sandwiches."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 385633,
+    "image": {
+      "path": "data/images/train2017/000000385633.jpg",
+      "width": 480,
+      "height": 640
+    },
+    "positive": [
+      "A refrigerator that has a plant on top of it.",
+      "A room has a refrigerator with a potted plant on top. ",
+      "A refrigerator with a plant on top in an otherwise empty room",
+      "A plant sits on top of a refrigerator in an empty room. ",
+      "A fridge in an empty room with a plant on top."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 60687,
+    "image": {
+      "path": "data/images/train2017/000000060687.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "A brown cow lays down in the grass",
+      "A cow with halo hair is laying in a pasture.",
+      "A cow sitting down in a field of green grass",
+      "A large brown cow laying in a lush green field.",
+      "A brown cow sits in the middle of a grassy field."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 358763,
+    "image": {
+      "path": "data/images/train2017/000000358763.jpg",
+      "width": 640,
+      "height": 478
+    },
+    "positive": [
+      "a keyboard with five screens and a laptop",
+      "The computer monitors are filled with important information.",
+      "five monitors a keyboard mouse and a laptop",
+      "A group of monitors are gathered on a computer desk. ",
+      "A desk with multiple computer monitors and a laptop."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 334405,
+    "image": {
+      "path": "data/images/train2017/000000334405.jpg",
+      "width": 640,
+      "height": 494
+    },
+    "positive": [
+      "A bus travels on a road near buildings and parked vehicles",
+      "a bus that is parked next to a building",
+      "An old fashioned brown retro bus riding through town.",
+      "An historical bus makes it way down a street, with palm trees in the background.",
+      "A travel bus on a street in a tropical town."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 71466,
+    "image": {
+      "path": "data/images/train2017/000000071466.jpg",
       "width": 375,
       "height": 500
     },
     "positive": [
-      "Close up of a traffic light with three lights, the top illuminated red with a person image, the second down not illuminated, and the bottom on hanging down.",
-      "there are three different lights that show if u can walk",
-      "A traffic light with it's green light busted.",
-      "A traffic signal has a pedestrian walk symbol alight.   ",
-      "A stoplight on a pole near a large building "
+      "a chair with a pillow a mirror on the wall and a set of curtains",
+      "View of a wall with a mirror and curtains in a rather plain looking room",
+      "A mirror is on the wall in a bedroom setting. ",
+      "A mirror hangs on the wall above a chair.",
+      "a close up of a pillow leaning against a wall"
     ],
     "negative": [
-      "a brown and white giraffe in a field of grass",
-      "The bathroom wall needs to be resurfaced and painted.",
-      "A bathroom with a white toilet sitting next to a bathroom sink.",
-      "A yellow and blue fire hydrant sitting on a sidewalk.",
-      "People are waiting on a corner to cross a street. ",
-      "A fire hydrant that is painted yellow and blue."
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 272863,
+    "image": {
+      "path": "data/images/train2017/000000272863.jpg",
+      "width": 640,
+      "height": 426
+    },
+    "positive": [
+      "A bathroom area with a tub, sink and wooden floor.",
+      "A white bath tub sitting next to a  white sink.",
+      "There is a sink and bathtub in the bathroom.",
+      "the bathtub and sink in a white tiled bathroom",
+      "A tub and and sink in a bathroom."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 564745,
+    "image": {
+      "path": "data/images/train2017/000000564745.jpg",
+      "width": 511,
+      "height": 640
+    },
+    "positive": [
+      "A young boy holding a rack fulled of tennis ball.",
+      "A boy is on a tennis court carrying a tray of balls.",
+      "A boy holds several tennis balls on his racket.",
+      "A young man in an orange shirt is holding a tray of tennis balls. ",
+      "A boy balances many tennis balls on a racquet."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 2240,
+    "image": {
+      "path": "data/images/train2017/000000002240.jpg",
+      "width": 600,
+      "height": 600
+    },
+    "positive": [
+      "A pile of teddy bears and dolls in a toy box.",
+      "Three teddy bears and a doll like next to each other in a box.",
+      "A group of stuffed toys are placed together.",
+      "Teddy bears and dolls laying down on a bench.",
+      "A group of cute stuffed animals in a bed."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 386500,
+    "image": {
+      "path": "data/images/train2017/000000386500.jpg",
+      "width": 640,
+      "height": 426
+    },
+    "positive": [
+      "A dog that is laying down on a couch.",
+      "A dog lying on a couch under a white blanket",
+      "The white dog is sleeping peacefully on the sofa.",
+      "A dog is sleeping on pillows on a couch.",
+      "a dog lays down on some pillows with a blanket "
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 280819,
+    "image": {
+      "path": "data/images/train2017/000000280819.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "A lady sitting at an enormous dining table with lots of food.",
+      "a woman with eye glasses sitting at a table covered with food",
+      "Several plates of food on a dining table.",
+      "A guest looks over the plates of fruit on the table.",
+      "A woman standing near a table with plates covered in food."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 210103,
+    "image": {
+      "path": "data/images/train2017/000000210103.jpg",
+      "width": 334,
+      "height": 500
+    },
+    "positive": [
+      "A bowl of various candies mixed in a red bowl.",
+      "A person holding a red bowl filled with cake.",
+      "SOMEONE IS HOLDING A RED PLASTIC BOWL OF JUNK FOOD",
+      "A person that is holding a bowl with food.",
+      "A bowl filled with ice cream, sprinkles, cherries and other toppings."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 527025,
+    "image": {
+      "path": "data/images/train2017/000000527025.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "People standing outside doorway with ribbon across it.",
+      "A group of people standing outside of a doorway with a ribbon on it.",
+      "A group of people stand outside a building at a ribbon cutting.",
+      "Some people are waiting in an open doorway",
+      "This is a picture of a house warming party."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 189550,
+    "image": {
+      "path": "data/images/train2017/000000189550.jpg",
+      "width": 612,
+      "height": 612
+    },
+    "positive": [
+      "A woman in sunglasses is in a picture with a giraffe. ",
+      "A woman wearing sun glasses standing next to a giraffe.",
+      "a woman smiles as a giraffe walks in the back ground ",
+      "a lady with glasses with a giraffe behind her",
+      "The woman is taking a picture of herself and the giraffe. "
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 406404,
+    "image": {
+      "path": "data/images/train2017/000000406404.jpg",
+      "width": 640,
+      "height": 428
+    },
+    "positive": [
+      "A black and white photo of a man in the air with his skateboard.",
+      "A man practices skate boarding in a skatepark.",
+      "A man that is in the air with a skateboard.",
+      "An individual is in the open view in the image.\n",
+      "a man is doing a trick on a skateboard"
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 328289,
+    "image": {
+      "path": "data/images/train2017/000000328289.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "People walking around the park with a few horses",
+      "A group of people walking horses through a field.",
+      "Group of people and horses in a grassy area next to trees.",
+      "Women are walking through a field with horses.",
+      "A group of people tending to horses on a grass covered field."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 177941,
+    "image": {
+      "path": "data/images/train2017/000000177941.jpg",
+      "width": 640,
+      "height": 426
+    },
+    "positive": [
+      "two pizzas on plates on a dining table with a pink design table cloth",
+      "There were two pizzas on the table ready to eat.",
+      "Picture of two pizza pies on a date",
+      "Two pizzas are on a table and a person is on the other side of the table.",
+      "two white plates with pizza a pitcher of wine some glasses and silverware"
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 78371,
+    "image": {
+      "path": "data/images/train2017/000000078371.jpg",
+      "width": 480,
+      "height": 640
+    },
+    "positive": [
+      "A small airplane taking off from an airport runway.",
+      "A Curtiss P-40 Warhawk taxis along a runway.",
+      "A small airplane that is getting ready to take off from the runway. ",
+      "a small air plane getting ready to take off .",
+      "An airplane is about to fly into the sky. "
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 77123,
+    "image": {
+      "path": "data/images/train2017/000000077123.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "The side of an airplane that is parked, and an Air China sign on the side of the plane.",
+      "An Air China airplane sitting on the runway ",
+      "This is the jet engine and side of an airplane.",
+      "a parked air plane sit at a airfield ",
+      "A view of the airplane looking down from the head."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 420229,
+    "image": {
+      "path": "data/images/train2017/000000420229.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "A person getting ready to use an apple slicer",
+      "Someone holding an apple slicer over an apple.",
+      "A hand holding a fruit slicer above an apple.",
+      "a person putting an apple slicer over an apple",
+      "An apple slicer is over a green apple."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 256668,
+    "image": {
+      "path": "data/images/train2017/000000256668.jpg",
+      "width": 375,
+      "height": 500
+    },
+    "positive": [
+      "A white urinal mounted to a bathroom wall.",
+      "A pair of kitchen tongs on top of a urinal.",
+      "Bathroom urinal with kitchen tongs on top behind plumbing.",
+      "A urinal in a bathroom with tongs on top of it.",
+      "a metal thing is sitting on top of a urinal"
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 84235,
+    "image": {
+      "path": "data/images/train2017/000000084235.jpg",
+      "width": 640,
+      "height": 427
+    },
+    "positive": [
+      "a hot dog on a bun with ketsup and lettuce on a plate",
+      "there is a hot dog and lettuce on a plate",
+      "A hot dog on a plate with lettuce.",
+      "A hotdog on a bed of lettuce on a plate.",
+      "A hotdog with ketchup in a bun on a bed of lettuce."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 400538,
+    "image": {
+      "path": "data/images/train2017/000000400538.jpg",
+      "width": 480,
+      "height": 640
+    },
+    "positive": [
+      "Many students sit together and talk in a classroom.",
+      "some people are sitting in desks and some are using laptops",
+      "a lot of people in a classroom setting ",
+      "A group of students split into groups for studying.",
+      "A bunch of teenagers in a classroom with laptops and books."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
     ],
     "source": "coco"
   },
@@ -590,132 +1463,1689 @@
       "A man standing over some bundles of bananas"
     ],
     "negative": [
-      "The airplane has taken off from the airport. ",
-      "A park bench siting next to a tree next to a  park.",
-      "A toliet sitting on a curb in front of a house.",
-      "A man sitting on a black and yellow bench on the phone.",
-      "two small children playing next to a fired hydrant and holding a balloon",
-      "Heavy city traffic all going in one direction"
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
     ],
     "source": "coco"
   },
   {
-    "id": 290570,
+    "id": 306404,
     "image": {
-      "path": "data/images/train2017/000000290570.jpg",
-      "width": 640,
-      "height": 424
+      "path": "data/images/train2017/000000306404.jpg",
+      "width": 442,
+      "height": 640
     },
     "positive": [
-      "A herd of sheep standing on top of snow covered field.",
-      "Several sheep grazing in a field of tall grass in front of a building.",
-      "Group of sheep and mountain out front of old house.",
-      "A flock of sheep standing around in the middle of a pen.",
-      "Sheep are grazing in a snow dusted field. "
+      "An man taking a picture of a sink through a mirror.",
+      "A bathroom sink with a mirror and modern towel holder.",
+      "A bathroom with a sink, counter top, and mirror is shown.",
+      "a white bathroom with a black counter a mirror and a sink",
+      "A man in a black jacket taking a picture of a sink area."
     ],
     "negative": [
-      "A man in a safety vest holds him arms up as he stands in front of an airplane.",
-      "A traffic light and a sign for the entrance of highway 527 South.",
-      "A series of motorbikes parked in a row on a street",
-      "an image of a park bench that is sitting in the grass",
-      "A green wooden bench in front of a house.",
-      "many different animals in a large field of green grass "
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
     ],
     "source": "coco"
   },
   {
-    "id": 462565,
+    "id": 371999,
     "image": {
-      "path": "data/images/train2017/000000462565.jpg",
+      "path": "data/images/train2017/000000371999.jpg",
+      "width": 612,
+      "height": 612
+    },
+    "positive": [
+      "An illuminated clock tower against a nighttime background",
+      "a black and white clock on a gold and black tower",
+      "a lit up clock on a tower in front of a night sky",
+      "A tower that has a clock on the top of it.",
+      "Clock tower in the dim moonlight as stars appear"
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 78522,
+    "image": {
+      "path": "data/images/train2017/000000078522.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "A sheep standing in the middle of a field.",
+      "A white sheep standing in a field of grass.",
+      "a few black face sheep scattered in a field ",
+      "A sheep stares as several other sheep graze in a field.",
+      "Sheep staring, laying and grazing in the grass. "
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 232262,
+    "image": {
+      "path": "data/images/train2017/000000232262.jpg",
       "width": 640,
       "height": 427
     },
     "positive": [
-      "people on bicycles ride down a busy street ",
-      "A group of people are riding bikes down the street in a bike lane",
-      "bike riders passing Burger King in city street",
-      "A group of bicyclists are riding in the bike lane.",
-      "Bicyclists on a city street, most not using the bike lane"
-    ],
-    "negative": [
-      "A bathroom has a sun decal on the wall.",
-      "A red helmet is on a yellow toilet in the dirt.",
-      "A restroom has a toilet and a decorative sun wall plaque.",
-      "A giraffe standing next to three baby giraffes in a zoo exhibit.",
-      "Woman taking a picture of someone standing behind a sculpture and a child pushing another woman towards the sculpture. ",
-      "A boy performing a kickflip on his skateboard on a city street."
-    ],
-    "source": "coco"
-  },
-  {
-    "id": 522418,
-    "image": {
-      "path": "data/images/train2017/000000522418.jpg",
-      "width": 640,
-      "height": 480
-    },
-    "positive": [
-      "A woman wearing a net on her head cutting a cake. ",
-      "A woman cutting a large white sheet cake.",
-      "A woman wearing a hair net cutting a large sheet cake.",
-      "there is a woman that is cutting a white cake",
-      "A woman marking a cake with the back of a chef's knife. "
-    ],
-    "negative": [
-      "A faded and rusty fire hydrant in grass next to the street.",
-      "A toliet sitting on a curb in front of a house.",
-      "a stop light that is out on a pole",
-      "A truck carries a large amount of items and a few people.",
-      "A plane just outside of a terminal with other planes in the background.",
-      "A kitchen has all stainless steel appliances and counters."
-    ],
-    "source": "coco"
-  },
-  {
-    "id": 383445,
-    "image": {
-      "path": "data/images/train2017/000000383445.jpg",
-      "width": 640,
-      "height": 480
-    },
-    "positive": [
-      "A glazed donut hanging from a metal rod.",
-      "A tasty looking treat hanging on a car antenna.",
-      "A donut on the antenna of a car.",
-      "A donut put around an antenna on a car ",
-      "There is a donut sitting on the car."
-    ],
-    "negative": [
-      "A shelf with hygiene products in a bathroom.\n",
-      "A man attending to several bundles of banana's as a motorcycle rides by.",
-      "a black and white picture of seagulls flying over a body of water.",
       "an image of a cars driving on the highway",
-      "a street with some motorcycles driving through it",
-      "An old vehicle painted light blue and dark blue."
+      "A section of traffic coming to a stop at an intersection.",
+      "A bunch of cars sit at the intersection of a street.",
+      "This is a picture of traffic on a very busy street.",
+      "A busy intersection filled with cars in asia"
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
     ],
     "source": "coco"
   },
   {
-    "id": 334321,
+    "id": 98416,
     "image": {
-      "path": "data/images/train2017/000000334321.jpg",
+      "path": "data/images/train2017/000000098416.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "Sheep in field by barn with fence and car.",
+      "Numerous sheep graze and interact with one another on a large field",
+      "some black and white sheep are grazing on green grass",
+      "A group of sheep standing on a grass field.",
+      "A bunch of sheep graze in a field. "
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 143824,
+    "image": {
+      "path": "data/images/train2017/000000143824.jpg",
+      "width": 500,
+      "height": 313
+    },
+    "positive": [
+      "A cat looking at a dog on a TV.",
+      "A cat is standing on a table next to the television.",
+      "Cat looking around television with dog on it",
+      "a cat very lose to a tv with a dog on it",
+      "The cat is looking at the television with the dog on it"
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 516750,
+    "image": {
+      "path": "data/images/train2017/000000516750.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "Two kayaks, one pink the other yellow, on bank of water. ",
+      "Two kayaks rest on the shore of a body of water.",
+      "Two kayaks sitting on the shore of a body of water.",
+      "Two kayaks are shown on the shore. ",
+      "Two kayaks are sitting on a river bank empty."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 398362,
+    "image": {
+      "path": "data/images/train2017/000000398362.jpg",
+      "width": 500,
+      "height": 292
+    },
+    "positive": [
+      "A window with wooden shutters and metal bars across it.",
+      "A light bulb hanging above an open door",
+      "Theres seems to be something hanging by a door way",
+      "A light bulb hangs down in front of a window with bars in it.",
+      "A vase hanging in font of a barred window."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 86408,
+    "image": {
+      "path": "data/images/train2017/000000086408.jpg",
+      "width": 640,
+      "height": 427
+    },
+    "positive": [
+      "A kitchen with a stove, microwave and refrigerator.",
+      "A refrigerator, oven and microwave sitting in a kitchen.",
+      "The kitchenette uses  small space to great efficiency.",
+      "an image of a kitchen setting with black appliances",
+      "A kitchen with cabinets, a stove, microwave and refrigerator."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 321079,
+    "image": {
+      "path": "data/images/train2017/000000321079.jpg",
+      "width": 640,
+      "height": 426
+    },
+    "positive": [
+      "A plate that has food on top of it with powdered sugar.",
+      "A breakfast item on a plate is sitting on a table.",
+      "different kinds of food on a glass plate",
+      "a bowl with some pancakes and toppings on it",
+      "Pancakes on a plate with banana, sauce and whipped cream toppings"
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 414560,
+    "image": {
+      "path": "data/images/train2017/000000414560.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "there are many cows that are laying in this barn",
+      "Three cows are tied up in a barn and standing in the hay.",
+      "three black and white cows are resting in hat",
+      "Small group of cows laying on hay inside of a pen.",
+      "Black and white cows sit in a pile of hay."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 188958,
+    "image": {
+      "path": "data/images/train2017/000000188958.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "A group of snowboarders standing outside a lodge",
+      "A group of people walking through the snow in front of a hotel.",
+      "A group of people with snowboards outside of a lodge.",
+      "A group of skiers takes off their skis near the lodge.",
+      "Snowboarders hanging around in front of a building at the bottom of a ski hill."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 391895,
+    "image": {
+      "path": "data/images/train2017/000000391895.jpg",
       "width": 640,
       "height": 360
     },
     "positive": [
-      "A large white dog is sitting on a bench beside an elderly man.",
-      "A large white dog sits on a bench with people next to a path.",
-      "A large dog sits just his bottom on a park bench.",
-      "A dog sitting on a bench next to an old man.",
-      "A couple of people sitting on a bench next to a dog."
+      "A man with a red helmet on a small moped on a dirt road. ",
+      "Man riding a motor bike on a dirt road on the countryside.",
+      "A man riding on the back of a motorcycle.",
+      "A dirt path with a young person on a motor bike rests to the foreground of a verdant area with a bridge and a background of cloud-wreathed mountains. ",
+      "A man in a red shirt and a red hat is on a motorcycle on a hill side."
     ],
     "negative": [
-      "A bike chained to the doors of a building ",
-      "a cat with a big fluffy tail sitting on top of a car tire ",
-      "jumbo jet comes in for a landing over some trees",
-      "A man is doing a trick on a skateboard",
-      "A giraffe standing next to three baby giraffes in a zoo exhibit.",
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 40881,
+    "image": {
+      "path": "data/images/train2017/000000040881.jpg",
+      "width": 640,
+      "height": 427
+    },
+    "positive": [
+      "A bowl of chicken and vegetables is shown.",
+      "a bowl of soup with vegetables and other foods",
+      "A bowl of soup with onions, broccoli and chicken.",
+      "A bowl containing soup made up of broccoli, red onions, cauliflower and scallions.",
+      "A bowl is filled with meat and different types of vegetables."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 185036,
+    "image": {
+      "path": "data/images/train2017/000000185036.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "A group of people riding skis across snow covered ground.",
+      "Three people smile as they each hold ski poles.",
+      "Three people standing holding ski poles in snow, of which, a man and a woman are smiling into the camera, beside another woman looking away, with evergreens, and two people in distance.",
+      "some people standing in the snow while holding some ski poles ",
+      "these three people are standing on skis in the snow"
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 484816,
+    "image": {
+      "path": "data/images/train2017/000000484816.jpg",
+      "width": 640,
+      "height": 426
+    },
+    "positive": [
+      "A yellow school bus with a creepy eye shaped rear view mirror.",
+      "The mirrors of a yellow school bus below a cloudy sky.",
+      "The school bus features a safety mirror on the side.",
+      "a close up of the front end of a school bus ",
+      "A school bus with a front mirror next to a light pole."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 493174,
+    "image": {
+      "path": "data/images/train2017/000000493174.jpg",
+      "width": 640,
+      "height": 426
+    },
+    "positive": [
+      "Two women in white dresses playing a game of tennis.",
+      "Two women playing tennis while a crowd watches.",
+      "Two women playing doubles tennis at a tennis match.",
+      "A couple of women on a court playing tennis.",
+      "Two women on the same side of the tennis court, playing tennis."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 167854,
+    "image": {
+      "path": "data/images/train2017/000000167854.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "The Asian woman is standing on the beach holding an opened parasol in each hand.",
+      "Woman poses on beach with two umbrellas in front of a floating boat",
+      "The woman is standing on the beach by the water with two umbrellas. ",
+      "The lady holds two umbrellas by the water.",
+      "A woman on the waters edge with two umbrellas, and a boat in the background."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 87199,
+    "image": {
+      "path": "data/images/train2017/000000087199.jpg",
+      "width": 480,
+      "height": 640
+    },
+    "positive": [
+      "A man in costume talking on a cell phone.",
+      "A man stands and talks on his cell phone.",
+      "A man in strange attire on a phone in a field",
+      "A big man speaks on a cell phone while at a vintage festival.",
+      "a man standing in a costume talking on a cell phone"
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 327436,
+    "image": {
+      "path": "data/images/train2017/000000327436.jpg",
+      "width": 460,
+      "height": 640
+    },
+    "positive": [
+      "A beautiful woman with red hair sitting at a table.",
+      "A woman sitting at a table with a clean plate.",
+      "A woman at a restaurant sits in front of a finished plate.",
+      "A picture of a woman that has just finished a desert.",
+      "A person presses her hands to her face above an empty bowl."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 195645,
+    "image": {
+      "path": "data/images/train2017/000000195645.jpg",
+      "width": 480,
+      "height": 640
+    },
+    "positive": [
+      "People and their children are gathered outside meeting together.",
+      "A group of well dressed adults sitting outside with some children.",
+      "The group of people are gathering together in the yard. ",
+      "A group of people and babies next to a rock.",
+      "A group of people, some seated,others standing and a wine glass on top of a table"
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 480726,
+    "image": {
+      "path": "data/images/train2017/000000480726.jpg",
+      "width": 640,
+      "height": 426
+    },
+    "positive": [
+      "A group of people on a court with a tennis racket.",
+      "A doubles tennis match is about to commence.",
+      "four women in white outfits are playing tennis and some fans",
+      "A group of women standing on top of a tennis court.",
+      "there are four woman talking at a tennis game"
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 137369,
+    "image": {
+      "path": "data/images/train2017/000000137369.jpg",
+      "width": 640,
+      "height": 426
+    },
+    "positive": [
+      "A silver motorcycle parked next to a forest filled with lots of trees.",
+      "A grey motorcycle parked in a tropical setting.",
+      "A motorcycle sits parked in palm tree lined driveway. ",
+      "There is a motor cycle that is parked next to many plants",
+      "A motorcycle on a dirt road near palm trees."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 384204,
+    "image": {
+      "path": "data/images/train2017/000000384204.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "A cat sitting on top of a window sill near a phone.",
+      "A cat that is lying on a window sill.",
+      "A cat is sitting on the window ledge in the sun.",
+      "There is a large adult cat sitting on a window sill.",
+      "A very cute cat sitting in a window."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 143541,
+    "image": {
+      "path": "data/images/train2017/000000143541.jpg",
+      "width": 361,
+      "height": 640
+    },
+    "positive": [
+      "A person stands in shallow water at the beach and looks at the ocean.",
+      "a man walking out into the ocean wearing a wetsuit and carrying a surfboard.",
+      "A person riding on top of water under a cloudy sky.",
+      "A personr is standing in shallow water holding a surfboard.",
+      "Someone is walking through water holding a surfboard."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 250108,
+    "image": {
+      "path": "data/images/train2017/000000250108.jpg",
+      "width": 640,
+      "height": 481
+    },
+    "positive": [
+      "A computer that is on a desk near a window.",
+      "An office desk in front of a large window overlooking a parking lot",
+      "this is a desk with a computer on it",
+      "A corner desk with a laptop and other office equipment",
+      "A office desk,  with a view of a parking lot. "
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 557360,
+    "image": {
+      "path": "data/images/train2017/000000557360.jpg",
+      "width": 640,
+      "height": 640
+    },
+    "positive": [
+      "Some bunches of red bananas on a stalk.",
+      "A tree with a bunch of red bananas next to lots of leaves.",
+      "Platanos growing on tree with much green behind",
+      "Branch of tree with something growing on it.",
+      "A small red plant similar to a banana plant."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 455859,
+    "image": {
+      "path": "data/images/train2017/000000455859.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "A little girl in a pink shirt standing near a blue metal sculpture.",
+      "People are standing outside in a busy city street.",
+      "Woman taking a picture of someone standing behind a sculpture and a child pushing another woman towards the sculpture. ",
+      "People in a inner city courtyard watching a performance. ",
+      "A woman snaps a photo of people having fun in the courtyard."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 5064,
+    "image": {
+      "path": "data/images/train2017/000000005064.jpg",
+      "width": 640,
+      "height": 427
+    },
+    "positive": [
+      "A baseball player swinging a bat during a game.",
+      "A batter swinging his bat during a baseball game",
+      "A man swinging a baseball bat at a ball.",
+      "a kid plays baseball as people watch ",
+      "The men are playing a game of baseball."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 511117,
+    "image": {
+      "path": "data/images/train2017/000000511117.jpg",
+      "width": 480,
+      "height": 640
+    },
+    "positive": [
+      "A couple of kids standing on top of a grass covered field.",
+      "A little boy wearing a baseball uniform stands by a little girl. ",
+      "A young boy in a baseball uniform and a young girl are standing in front of a chain link fence.",
+      "A little boy and girl standing on a baseball field. The boy has a uniform on.",
+      "A young baseball player is standing next to a young girl."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 348140,
+    "image": {
+      "path": "data/images/train2017/000000348140.jpg",
+      "width": 500,
+      "height": 367
+    },
+    "positive": [
+      "An intracately designed boat on a river bank.",
+      "A colorful canoe coasting the lake by many people.",
+      "An elaborate boat reflects against the water below it.",
+      "People walk by a boat sitting on the water. ",
+      "A canoe that is in a lake during the day,"
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 568101,
+    "image": {
+      "path": "data/images/train2017/000000568101.jpg",
+      "width": 640,
+      "height": 425
+    },
+    "positive": [
+      "kites being flown on the beach near the ocean",
+      "A beach a lot of people flying kites in the air.",
+      "The flock of seagulls is converging on the beach",
+      "a group of birds flying over a beach",
+      "A crowd of people flying kites next to the ocean."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 132686,
+    "image": {
+      "path": "data/images/train2017/000000132686.jpg",
+      "width": 480,
+      "height": 640
+    },
+    "positive": [
+      "A sky filled with lots of colorful flying kites.",
+      "Variety of different colored kites flying next to each other. ",
+      "Multi colored and shaped kites flying in cloudy skies.",
+      "many different types of kites flying in the sky",
+      "A bunch of clouds flying very high in the sky."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 318219,
+    "image": {
+      "path": "data/images/train2017/000000318219.jpg",
+      "width": 556,
+      "height": 640
+    },
+    "positive": [
+      "A young boy standing in front of a computer keyboard.",
+      "a little boy wearing headphones and looking at a computer monitor",
+      "He is listening intently to the computer at school.",
+      "A young boy stares up at the computer monitor.",
+      "a young kid with head phones on using a computer "
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 158333,
+    "image": {
+      "path": "data/images/train2017/000000158333.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "some peeled oranges sitting in a clear blender",
+      "some piled oranges in a glass blender ready to be blended",
+      "Top view of a few skinned oranges inside of a blender",
+      "A blender filled with three peeled oranges sitting on a counter.",
+      "some cut up fruit is sitting in a blender"
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 219514,
+    "image": {
+      "path": "data/images/train2017/000000219514.jpg",
+      "width": 500,
+      "height": 400
+    },
+    "positive": [
+      "some street signs sitting on a pole next to a street light ",
+      "A traffic light and road signs are posted near buildings.",
+      "A traffic light and a sign for the entrance of highway 527 South.",
+      "A streetlight next to a street sign and a directional sign.",
+      "a green light is next to a couple of street signs on a pole"
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 64710,
+    "image": {
+      "path": "data/images/train2017/000000064710.jpg",
+      "width": 425,
+      "height": 640
+    },
+    "positive": [
+      "a person and a dog are standing near some cliffs",
+      "A person walks with a backpack being followed by a dog.",
+      "A hiker and dogs are walking in a canyon.",
+      "A person walks along on a patch of sand near some rocks.",
+      "A person walking across a desert filled surrounded by mountains."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 241844,
+    "image": {
+      "path": "data/images/train2017/000000241844.jpg",
+      "width": 640,
+      "height": 465
+    },
+    "positive": [
+      "A kitchen with white cabinets has a sink and white refrigerator.",
+      "A kitchen filled with lots of cabinet space and a refrigerator.",
+      "The sun is shining into a country style kitchen.",
+      "An empty kitchen lit by sunlight coming through the window. ",
+      "An old style kitchen with many cream colored cabinets and a brightly lit window."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 261062,
+    "image": {
+      "path": "data/images/train2017/000000261062.jpg",
+      "width": 640,
+      "height": 439
+    },
+    "positive": [
+      "the door to the room is open to the outside",
+      "A room with wooden cabinets and a brown couch.",
+      "a living room with some chairs sitting behind a small couch ",
+      "A mantle over a fire place and in front of a love seat.",
+      "A living room is shown with chairs and cabinets."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 123289,
+    "image": {
+      "path": "data/images/train2017/000000123289.jpg",
+      "width": 500,
+      "height": 375
+    },
+    "positive": [
+      "A crowded city street filled with traffic at night.",
+      "A traffic light over many different passing cars.",
+      "A night time city view with vehicle lights and street lights.  ",
+      "A city street with lights at night with vehicles",
+      "A busy street with passing  traffic at night"
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 310227,
+    "image": {
+      "path": "data/images/train2017/000000310227.jpg",
+      "width": 640,
+      "height": 541
+    },
+    "positive": [
+      "Black and white photograph of two bare feet sticking out from the covers of a child's bed",
+      "A pair of feet poke out from under a bed sheet.",
+      "Someone's toes that are not covered by a blanket.",
+      "A person laying in bed underneath a blanket.",
+      "Bare feet sticking out from under the covers of a bed full of stuffed animals."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 20965,
+    "image": {
+      "path": "data/images/train2017/000000020965.jpg",
+      "width": 333,
+      "height": 500
+    },
+    "positive": [
+      "a tennis player attempting to reach a tennis ball",
+      "A man is trying to catch the Tennis ball. ",
+      "A man shows his great form while returning the ball.",
+      "A tennis player is about to hit a tennis ball",
+      "Man attempting to return a volley during a tennis game."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 479008,
+    "image": {
+      "path": "data/images/train2017/000000479008.jpg",
+      "width": 500,
+      "height": 333
+    },
+    "positive": [
+      "A group of passengers sitting on an airplane in flight",
+      "Looking down the aisle of a plane, where people are seated.",
+      "a group of people sitting on the seats in an aircraft waiting to depart",
+      "A row of airplane seats hold people as one man lifts up a book and is reading.",
+      "Looking down the aisle at a row of airplane seats occupied by travelers. "
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 430359,
+    "image": {
+      "path": "data/images/train2017/000000430359.jpg",
+      "width": 640,
+      "height": 638
+    },
+    "positive": [
+      "A baseball player holding a bat over his head.",
+      "a baseball player is holding up a bat in the air",
+      "A man wearing a baseball uniform warms up with a bat on a stadium field.",
+      "A professional baseball player holding a bat overhead.",
+      "A baseball player is holding his bat over his head."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 265574,
+    "image": {
+      "path": "data/images/train2017/000000265574.jpg",
+      "width": 640,
+      "height": 426
+    },
+    "positive": [
+      "A bathroom with a white bathtub next to a toilet.",
+      "A white bathroom has a red towel on the bar.",
+      "A bathroom with wooden floors and a red towel. ",
+      "A white bathroom with a wood floor and a red toweling hanging from a rail.",
+      "A bathroom that is very clean and organized."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 538859,
+    "image": {
+      "path": "data/images/train2017/000000538859.jpg",
+      "width": 480,
+      "height": 640
+    },
+    "positive": [
+      "The chef is standing by a giant pan of pizza.",
+      "A cook preparing food in a kitchen at a restaurant.",
+      "A man is serving pizza at a table. ",
+      "A chef slicing pizza to serve at a restaurant.",
+      "Fresh baked pizza being served at a restaurant."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 213687,
+    "image": {
+      "path": "data/images/train2017/000000213687.jpg",
+      "width": 640,
+      "height": 479
+    },
+    "positive": [
+      "Motorcycles driving down a wide city street nearing a white building.",
+      "A large building with many windows and people riding scooters nearby",
+      "People are riding scooters down the middle of the road.",
+      "People are riding electric scooters in front of a large building.",
       "Many motorcycles riding in front of a KFC."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 381106,
+    "image": {
+      "path": "data/images/train2017/000000381106.jpg",
+      "width": 480,
+      "height": 640
+    },
+    "positive": [
+      "two kids play at the beach with their kite ",
+      "Two persons flying a kite on the sea beach.",
+      "Two little kids flying a kite on a beach.",
+      "Two children flying a kite on the beach.",
+      "Two children on a beach flying a yellow kite."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 320039,
+    "image": {
+      "path": "data/images/train2017/000000320039.jpg",
+      "width": 640,
+      "height": 427
+    },
+    "positive": [
+      "a close up of a child eating food ",
+      "A girl is sitting and eating some spaghetti.",
+      "A girl eating a plate of spaghetti with a fork.",
+      "A person wearing a pink, blue and white top, eating spaghetti with a fork.",
+      "A young girl is enjoying her plate of spaghetti. "
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 193271,
+    "image": {
+      "path": "data/images/train2017/000000193271.jpg",
+      "width": 480,
+      "height": 320
+    },
+    "positive": [
+      "A kitchen filled with black appliances and lots of counter top space.",
+      "some brown cabinets a black oven a tea kettle and a microwave",
+      "A small kitchen with glass and wooden cabinets.",
+      "A modern style kitchen filled with may different items.",
+      "A kitchen with wooden cabinets and black appliances."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 143671,
+    "image": {
+      "path": "data/images/train2017/000000143671.jpg",
+      "width": 640,
+      "height": 473
+    },
+    "positive": [
+      "A bunch of fresh carrots still covered with dirt in a basket.",
+      "Freshly picked carrots with dirt on them sit in a basket. ",
+      "Carrots sit in a basket covered in soil.",
+      "A pile of carrots in a woven basket.",
+      "Carrots picked from the earth are still dirty."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 7211,
+    "image": {
+      "path": "data/images/train2017/000000007211.jpg",
+      "width": 640,
+      "height": 360
+    },
+    "positive": [
+      "A train car with blue graffiti on the side of it .",
+      "an image of a train with graffiti on the side",
+      "Old weathered red train boxcar with blue spray painted graffiti.",
+      "A red train car that has graffiti on it",
+      "A train has been decorated with colorful, elaborate art work."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 362368,
+    "image": {
+      "path": "data/images/train2017/000000362368.jpg",
+      "width": 334,
+      "height": 500
+    },
+    "positive": [
+      "A small boy holding a plate of tasty looking food.",
+      "Boy holding bowl of ice cream sundae up",
+      "A child holding up a red plate full of foo.",
+      "A young man holding a pale of sweet treats.",
+      "A boy showing off a bowl with an ice cream sundae."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 379977,
+    "image": {
+      "path": "data/images/train2017/000000379977.jpg",
+      "width": 425,
+      "height": 640
+    },
+    "positive": [
+      "A brown horse is walking around in the grassy mountain.",
+      "A horse running in a green field next to a black and white pole.",
+      "A horse in a green meadow along hills with a cloudy grey sky in the background.",
+      "A horse is trotting along a hilly area.",
+      "A horse majestically standing in a hilly field."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 551517,
+    "image": {
+      "path": "data/images/train2017/000000551517.jpg",
+      "width": 640,
+      "height": 450
+    },
+    "positive": [
+      "a bird standing close to a parked car",
+      "Two birds standing next to a black car looking inside.",
+      "A PAIR OF VERY LARGE BIRDS ARE STANDING BESIDE A CAR",
+      "A bird is looking through a car window",
+      "Two bird that are looking inside of a car."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 76460,
+    "image": {
+      "path": "data/images/train2017/000000076460.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "A baby and adult elephant walk around their pen.",
+      "Elephants in the grass on a sunny day ",
+      "Several adult elephants and a young elephant in a field of grass.",
+      "Two adult elephants and one child elephant grazing on grass.",
+      "The adult elephant is standing behind a young one."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 15690,
+    "image": {
+      "path": "data/images/train2017/000000015690.jpg",
+      "width": 640,
+      "height": 426
+    },
+    "positive": [
+      "A couple of elephants standing next to each other.",
+      "Two elephants with tusks wade in the shallow water.",
+      "A couple of large elephants in the water.",
+      "Two elephants that are walking in some water.",
+      "Two elephants drink water out of a body of water"
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 138079,
+    "image": {
+      "path": "data/images/train2017/000000138079.jpg",
+      "width": 480,
+      "height": 640
+    },
+    "positive": [
+      "A door opens to a bare, white bathroom. ",
+      "A varying palette of neutrals in a bathroom awaits the softening of the cabinetry.",
+      "A bathroom with a tile floor, bathtub and shower and no shower curtain.",
+      "A bathroom is shown with a shower and a toilet.",
+      "A beige and white three piece bathroom with no shower curtain."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 404464,
+    "image": {
+      "path": "data/images/train2017/000000404464.jpg",
+      "width": 480,
+      "height": 640
+    },
+    "positive": [
+      " Persons skating in the ice skating rink on the skateboard.",
+      "A snowboard sliding very gently across the snow in an enclosure.",
+      "A person on a snowboard getting ready for competition.",
+      "Man on snowboard riding under metal roofed enclosed area.",
+      "A snowboarder practicing his moves at a snow facility."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 209322,
+    "image": {
+      "path": "data/images/train2017/000000209322.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "A bathroom with blue and white tiles and a white toilet",
+      "A toilet with a water closet in a small blue and white bathroom.",
+      "A white toilet in front of a tiled bathroom wall.",
+      "A very small corner of a rest room with a toilet.",
+      "A powder room with toilet, wall-mounted sink, and blue-and-white tiled walls."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 481635,
+    "image": {
+      "path": "data/images/train2017/000000481635.jpg",
+      "width": 480,
+      "height": 640
+    },
+    "positive": [
+      "A smiling woman waves at the camera as she sits at a restaurant table in front of a piece of pizza.",
+      "A woman at a restaurant eating a pizza.",
+      "Lady sitting at a table with pizza waving at the camera.",
+      "A photo of a woman sitting at a table with a plate of food.",
+      "A woman is sitting next to a table with a pizza."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 212704,
+    "image": {
+      "path": "data/images/train2017/000000212704.jpg",
+      "width": 640,
+      "height": 424
+    },
+    "positive": [
+      "Four girls who are looking at a computer.",
+      "Four young women are smiling at a computer monitor.",
+      "four nice ladies gazing at the computers smiling",
+      "A group of four women in orange aprons in front of a computer. ",
+      "a group of people gathered around one person sitting in front o f a computer monitor"
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 463610,
+    "image": {
+      "path": "data/images/train2017/000000463610.jpg",
+      "width": 480,
+      "height": 640
+    },
+    "positive": [
+      "A white toilet sitting next to a shower in a bathroom.",
+      "A bathroom, showing the shower, toilet and sink.",
+      "A bathroom with a toilet, sink and shower stall.",
+      "a bathroom view of a stand up shower and toilet with a sink near by",
+      "A PICTURE OF A BATHROOM WITH SLIDING SHOWER "
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 309120,
+    "image": {
+      "path": "data/images/train2017/000000309120.jpg",
+      "width": 640,
+      "height": 427
+    },
+    "positive": [
+      "A man getting ready to kick a soccer ball.",
+      "A man that is on a soccer field with a ball.",
+      "A man carrying a soccer ball down a field.",
+      "there is a man running on a field with a soccer ball",
+      "The soccer player is bringing back the ball into play."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 15085,
+    "image": {
+      "path": "data/images/train2017/000000015085.jpg",
+      "width": 640,
+      "height": 426
+    },
+    "positive": [
+      "A giraffe drinking water from a  river on a beach.",
+      "A lone giraffe that is getting a drink of water from a small pond.",
+      "A giraffe awkwardly sips water from a puddle in the dirt road.",
+      "Giraffe is eating or drinking something off of the ground.",
+      "A giraffe leaning down and bending its knees to drink from a puddle"
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 74331,
+    "image": {
+      "path": "data/images/train2017/000000074331.jpg",
+      "width": 427,
+      "height": 640
+    },
+    "positive": [
+      "This is a case full of yellow bananas. ",
+      "Bananas a tightly packed and boxed for delivery to the market.",
+      "a bunch of bananas are packaged up in boxes",
+      "Bananas packed in cardboard box covered in plastic.",
+      "An unopened box full of perfectly ripe bananas."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 191381,
+    "image": {
+      "path": "data/images/train2017/000000191381.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "Blue dust pan and brush on floor next to white commode.",
+      "A toilet in a low budget bathroom with a rough floor.",
+      "a close up of a toilet and a dust pale",
+      "A clean toilet in a bathroom with a cement floor.",
+      "a bathroom with a blue dustpan and broom on the floor "
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 505099,
+    "image": {
+      "path": "data/images/train2017/000000505099.jpg",
+      "width": 640,
+      "height": 512
+    },
+    "positive": [
+      "a baseball player is going to swing a bat",
+      "A baseball game with Barry Bonds #25 at bat and a catcher and umpire behind the plate as fans, photographers and camera people look on from the stands.",
+      "Base ball game with pitcher on home base and the umpire.",
+      "A man is at bat at a baseball game with a crowd watching.",
+      "A baseball player is up to bat while the crowd films the event."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 37675,
+    "image": {
+      "path": "data/images/train2017/000000037675.jpg",
+      "width": 640,
+      "height": 415
+    },
+    "positive": [
+      "Horses graze in front of a large building amid snow.",
+      "Several horses eating grass around melting a snow spot",
+      "some horses eating grass by a big house",
+      "Horses grazing in a field by a large home.",
+      "A couple of horses grazing in front of an estate."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 147980,
+    "image": {
+      "path": "data/images/train2017/000000147980.jpg",
+      "width": 612,
+      "height": 612
+    },
+    "positive": [
+      "A group of children playing baseball out side.",
+      "Group of children with baseball gloves throwing balls back and forth.",
+      "Some children are playing softball on a field.",
+      "this is a group of children playing baseball",
+      "A group of kids that are standing in the grass."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 376549,
+    "image": {
+      "path": "data/images/train2017/000000376549.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "A man in his skiing gear is posing for the camera. ",
+      "A man on skis at the peak of a slope looking back.",
+      "A man in black jacket on skis standing next to a mountain.",
+      "A person on skis stands on the snow.",
+      "A man standing in the snow on top of the mounting about to go skiing."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 14869,
+    "image": {
+      "path": "data/images/train2017/000000014869.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "A park bench siting next to a tree next to a  park.",
+      "Green park bench in front of a tree on a sunny day.",
+      "A lone public bench under a tree surrounded by other trees and grass.  ",
+      "A green slated park bench under a tree.",
+      "A green painted bench sitting underneath a tree."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 157184,
+    "image": {
+      "path": "data/images/train2017/000000157184.jpg",
+      "width": 425,
+      "height": 640
+    },
+    "positive": [
+      "A man holding a giant pair of black scissors.",
+      "A man holding a giant scissors about three feet tall.",
+      "A man holding a large pair of scissors ",
+      "A smiling guy holding up a huge pair of scissors.",
+      "A smiling man is holding a pair of gigantic scissors."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 539124,
+    "image": {
+      "path": "data/images/train2017/000000539124.jpg",
+      "width": 640,
+      "height": 639
+    },
+    "positive": [
+      "A young girl riding a skateboard next to two guys.",
+      "two young men standing in front of her while she has her foot on a skateboard.",
+      "The teenagers are standing together on the sidewalk. ",
+      "Three young people standing and talking on a sidewalk.",
+      "a group of three people talking to each other on the sidewalk with a skateboard"
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 393258,
+    "image": {
+      "path": "data/images/train2017/000000393258.jpg",
+      "width": 500,
+      "height": 375
+    },
+    "positive": [
+      "A bunch of luggage laying on an area rug. ",
+      "Several pieces of luggage on a floor with an area rug.",
+      "The luggage is sitting on top of the persian rug.",
+      "a bunch of travel bags sit on a carpet floor ",
+      "Several pieces of luggage that are laying on the floor."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 25202,
+    "image": {
+      "path": "data/images/train2017/000000025202.jpg",
+      "width": 480,
+      "height": 640
+    },
+    "positive": [
+      "A plate has oranges and a chocolate donut.",
+      "A plate of orange slices and meat with three forks on it.",
+      "A food entree is served on a plate.",
+      "A plate with a chocolate and a sliced orange.",
+      "A chocolate donut on a plate with orange wedges on the side. "
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 501762,
+    "image": {
+      "path": "data/images/train2017/000000501762.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "A man on a beach holding a frisbee at sunset.",
+      "A guy playing frisbee at the beach at sunset.",
+      "A person standing in the sand holding a Frisbee. ",
+      "a man on a beach holding a frisbee",
+      "A young man standing on a beach holding an orange Frisbee."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 495107,
+    "image": {
+      "path": "data/images/train2017/000000495107.jpg",
+      "width": 480,
+      "height": 640
+    },
+    "positive": [
+      "a boy eating a doughnut and holding a coffee cup",
+      "A bespectacled man about to eat a donut in the park",
+      "a man in glasses is holding a snadwich",
+      "A man who looks like the zodiac killer eating a donut while holding a yellow cup.",
+      "a male in a gray sweatshirt is holding a donut and a drink"
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 336493,
+    "image": {
+      "path": "data/images/train2017/000000336493.jpg",
+      "width": 512,
+      "height": 640
+    },
+    "positive": [
+      "A man holding a baseball bat while standing next to home plate.",
+      "There is a baseball game going on the player is waiting to hit the ball, the umpire is at base.",
+      "There is dust coming out of the catcher's glove as a boy prepares to bat.",
+      "A catcher catches a baseball after a young kid swings and misses. ",
+      "The batter, catcher, and plate umpire are fixed on the pitcher."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
+    ],
+    "source": "coco"
+  },
+  {
+    "id": 463633,
+    "image": {
+      "path": "data/images/train2017/000000463633.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "positive": [
+      "A red stop sign sitting in the middle of a street.",
+      "Humorous graffiti is pictured on a stop sign.",
+      "A stop sign with graffiti about the Red Sox",
+      "Graffiti on a stop sign supporting the red sox",
+      "A stop sign with words written on it with a black marker."
+    ],
+    "negative": [
+      "a photo of a cat sitting on a table",
+      "a man playing a guitar on stage",
+      "a car driving on a highway"
     ],
     "source": "coco"
   }

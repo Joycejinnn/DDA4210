@@ -1,0 +1,9 @@
+.env
+/.venv
+/__pycache__/
+CLAUDE.md
+token.txt
+/images
+data.json
+download.py
+test.py
