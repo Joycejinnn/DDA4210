@@ -16,10 +16,10 @@ import numpy as np
 CONFIG = {
     "teacher_scores_file": "output/train_scores.jsonl",
     "image_root": "",          # 图片根目录（因为jsonl中已是相对路径，留空）
-    "alpha": 0.8,              # InternVL3权重
+    "alpha": 0.75,              # InternVL3权重
     "batch_size": 32,
     "epochs": 20,
-    "lr": 2e-5,
+    "lr": 1e-5,
     "max_seq_len": 64,
     "image_size": 224,
     "num_workers": 4,
