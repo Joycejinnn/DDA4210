@@ -1,1 +1,10 @@
-{\n  "evaluation_metrics": {\n    "Baseline": {\n      "accuracy": 0.85,\n      "precision": 0.82,\n      "recall": 0.80,\n      "f1_score": 0.81\n    },\n    "CLIP_Only": {\n      "accuracy": 0.88,\n      "precision": 0.85,\n      "recall": 0.84,\n      "f1_score": 0.84\n    },\n    "InternVL_Only": {\n      "accuracy": 0.87,\n      "precision": 0.83,\n      "recall": 0.82,\n      "f1_score": 0.82\n    },\n    "Fusion_Distillation": {\n      "alpha_0.70": {\n        "accuracy": 0.90,\n        "precision": 0.89,\n        "recall": 0.88,\n        "f1_score": 0.88\n      },\n      "alpha_0.73": {\n        "accuracy": 0.91,\n        "precision": 0.90,\n        "recall": 0.89,\n        "f1_score": 0.89\n      },\n      "alpha_0.75": {\n        "accuracy": 0.92,\n        "precision": 0.91,\n        "recall": 0.90,\n        "f1_score": 0.90\n      }\n    },\n    "Ensemble": {\n      "accuracy": 0.93,\n      "precision": 0.92,\n      "recall": 0.91,\n      "f1_score": 0.91\n    }\n  }\n}
+{
+  "status": "pending_real_evaluation",
+  "message": "This file is now a placeholder. Run compare_experiments.py or evaluate_student_model.py after adding real checkpoints and optional teacher score files.",
+  "expected_outputs": [
+    "evaluation_outputs/compare_experiments/comparison_summary.json",
+    "evaluation_outputs/compare_experiments/comparison_summary.csv",
+    "evaluation_outputs/compare_experiments/figures/metric_bars.png",
+    "evaluation_outputs/compare_experiments/figures/roc_curves.png"
+  ]
+}
