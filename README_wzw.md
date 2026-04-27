@@ -58,6 +58,21 @@ This file is needed if you want to compare:
 Important:
 The teacher score file must be aligned to the same dataset you are evaluating. If you run on `data/test.json`, the JSONL should contain scores for the flattened samples from `data/test.json`, not from `train.json`.
 
+### DistilBERT local files
+
+The student checkpoints depend on `distilbert-base-uncased`. If your machine cannot download from Hugging Face, place a local copy of that model directory in the project and pass it through `--text-model-name`.
+
+The local directory should contain files such as:
+
+```text
+config.json
+tokenizer.json
+tokenizer_config.json
+vocab.txt
+special_tokens_map.json
+model.safetensors or pytorch_model.bin
+```
+
 ## 3. Install Dependencies
 
 Use the same environment as the training branch. At minimum you need:
@@ -127,6 +142,17 @@ python compare_experiments.py ^
   --fusion-alpha fusion070=0.70 ^
   --fusion-alpha fusion073=0.73 ^
   --fusion-alpha fusion075=0.75 ^
+  --student-checkpoint alpha070=checkpoints/student_distill_best_alpha070.pt ^
+  --student-checkpoint alpha073=checkpoints/student_distill_best_alpha073.pt ^
+  --student-checkpoint alpha075=checkpoints/student_distill_best_alpha075.pt
+```
+
+If you need to use a local DistilBERT directory:
+
+```bash
+python compare_experiments.py ^
+  --dataset data/test.json ^
+  --text-model-name local_models/distilbert-base-uncased ^
   --student-checkpoint alpha070=checkpoints/student_distill_best_alpha070.pt ^
   --student-checkpoint alpha073=checkpoints/student_distill_best_alpha073.pt ^
   --student-checkpoint alpha075=checkpoints/student_distill_best_alpha075.pt

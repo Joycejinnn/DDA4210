@@ -28,6 +28,7 @@ DEFAULT_CONFIG = {
     "num_workers": 0,
     "batch_size": 32,
     "threshold": 0.5,
+    "text_model_name": "distilbert-base-uncased",
 }
 
 
@@ -251,9 +252,15 @@ class ImageEncoder(nn.Module):
 
 
 class StudentModel(nn.Module):
-    def __init__(self, text_embed_dim: int = 768, image_embed_dim: int = 128, hidden_dim: int = 256) -> None:
+    def __init__(
+        self,
+        text_embed_dim: int = 768,
+        image_embed_dim: int = 128,
+        hidden_dim: int = 256,
+        text_model_name: str = DEFAULT_CONFIG["text_model_name"],
+    ) -> None:
         super().__init__()
-        self.text_encoder = DistilBertModel.from_pretrained("distilbert-base-uncased")
+        self.text_encoder = DistilBertModel.from_pretrained(text_model_name)
         self.text_proj = nn.Linear(text_embed_dim, hidden_dim)
         self.image_encoder = ImageEncoder(embed_dim=image_embed_dim)
         self.image_proj = nn.Linear(image_embed_dim, hidden_dim)
@@ -281,9 +288,10 @@ def create_dataloader(
     max_seq_len: int = DEFAULT_CONFIG["max_seq_len"],
     image_size: int = DEFAULT_CONFIG["image_size"],
     num_workers: int = DEFAULT_CONFIG["num_workers"],
+    text_model_name: str = DEFAULT_CONFIG["text_model_name"],
 ) -> Tuple[List[dict], DataLoader]:
     samples = load_flattened_samples(dataset_path)
-    tokenizer = DistilBertTokenizer.from_pretrained("distilbert-base-uncased")
+    tokenizer = DistilBertTokenizer.from_pretrained(text_model_name)
     image_transform = transforms.Compose(
         [
             transforms.Resize((image_size, image_size)),
@@ -305,8 +313,12 @@ def create_dataloader(
     return samples, loader
 
 
-def load_student_model(checkpoint_path: str, device: torch.device) -> StudentModel:
-    model = StudentModel()
+def load_student_model(
+    checkpoint_path: str,
+    device: torch.device,
+    text_model_name: str = DEFAULT_CONFIG["text_model_name"],
+) -> StudentModel:
+    model = StudentModel(text_model_name=text_model_name)
     state_dict = torch.load(checkpoint_path, map_location=device)
     model.load_state_dict(state_dict)
     model.to(device)
@@ -400,4 +412,3 @@ def ensure_directory(path: str) -> None:
 def save_json(payload: dict, output_path: str) -> None:
     with open(output_path, "w", encoding="utf-8") as handle:
         json.dump(payload, handle, ensure_ascii=False, indent=2)
-

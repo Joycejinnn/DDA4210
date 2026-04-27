@@ -25,6 +25,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--max-seq-len", type=int, default=DEFAULT_CONFIG["max_seq_len"])
     parser.add_argument("--image-size", type=int, default=DEFAULT_CONFIG["image_size"])
     parser.add_argument("--num-workers", type=int, default=DEFAULT_CONFIG["num_workers"])
+    parser.add_argument(
+        "--text-model-name",
+        default=DEFAULT_CONFIG["text_model_name"],
+        help="Hugging Face model name or local directory for DistilBERT tokenizer/model files.",
+    )
     return parser.parse_args()
 
 
@@ -38,10 +43,11 @@ def main() -> None:
         max_seq_len=args.max_seq_len,
         image_size=args.image_size,
         num_workers=args.num_workers,
+        text_model_name=args.text_model_name,
     )
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    model = load_student_model(args.checkpoint, device=device)
+    model = load_student_model(args.checkpoint, device=device, text_model_name=args.text_model_name)
     labels, probabilities, prediction_rows = predict_probabilities(model, loader, device=device)
     metrics = compute_metrics(labels, probabilities, threshold=args.threshold)
 
