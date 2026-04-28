@@ -8,15 +8,17 @@ import torch
 
 from evaluation_utils import (
     DEFAULT_CONFIG,
-    StudentModel,
     compute_metrics,
     compute_precision_recall_points,
     compute_roc_points,
     compute_teacher_baseline,
     create_dataloader,
+    create_text_dataloader,
     ensure_directory,
     load_student_model,
+    load_text_only_model,
     predict_probabilities,
+    predict_text_probabilities,
     save_json,
 )
 
@@ -61,6 +63,12 @@ def parse_args() -> argparse.Namespace:
         help="Student checkpoint in NAME=PATH format. Can be repeated.",
     )
     parser.add_argument(
+        "--text-baseline-checkpoint",
+        action="append",
+        default=[],
+        help="Text-only baseline checkpoint in NAME=PATH format. Can be repeated.",
+    )
+    parser.add_argument(
         "--teacher-score-file",
         help="Teacher score JSONL aligned to the evaluation dataset. Enables CLIP/InternVL/fusion baselines.",
     )
@@ -71,6 +79,11 @@ def parse_args() -> argparse.Namespace:
         help="Teacher fusion baseline in NAME=ALPHA format. Can be repeated.",
     )
     parser.add_argument("--output-dir", default="evaluation_outputs/compare_experiments")
+    parser.add_argument(
+        "--disable-ensemble",
+        action="store_true",
+        help="Disable automatic student ensemble evaluation.",
+    )
     parser.add_argument("--threshold", type=float, default=DEFAULT_CONFIG["threshold"])
     parser.add_argument("--batch-size", type=int, default=DEFAULT_CONFIG["batch_size"])
     parser.add_argument("--max-seq-len", type=int, default=DEFAULT_CONFIG["max_seq_len"])
@@ -140,7 +153,7 @@ def evaluate_student_experiments(args: argparse.Namespace, output_dir: str) -> D
             ensemble_labels = labels
             ensemble_rows = rows
 
-    if len(ensemble_probabilities) >= 2:
+    if not args.disable_ensemble and len(ensemble_probabilities) >= 2:
         mean_probabilities = np.mean(np.stack(ensemble_probabilities, axis=0), axis=0)
         metrics = compute_metrics(ensemble_labels, mean_probabilities.tolist(), threshold=args.threshold)
         predictions = []
@@ -217,13 +230,44 @@ def evaluate_teacher_experiments(args: argparse.Namespace, output_dir: str) -> D
     return results
 
 
+def evaluate_text_baselines(args: argparse.Namespace) -> Dict[str, dict]:
+    baseline_paths = parse_named_paths(args.text_baseline_checkpoint)
+    if not baseline_paths:
+        return {}
+
+    _, loader = create_text_dataloader(
+        dataset_path=args.dataset,
+        batch_size=args.batch_size,
+        max_seq_len=args.max_seq_len,
+        num_workers=args.num_workers,
+        text_model_name=args.text_model_name,
+        shuffle=False,
+    )
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    results: Dict[str, dict] = {}
+    for name, checkpoint_path in baseline_paths.items():
+        model = load_text_only_model(checkpoint_path, device=device, text_model_name=args.text_model_name)
+        labels, probabilities, rows = predict_text_probabilities(model, loader, device=device)
+        metrics = compute_metrics(labels, probabilities, threshold=args.threshold)
+        results[name] = {
+            "type": "text_baseline",
+            "checkpoint": checkpoint_path,
+            "metrics": metrics.to_dict(),
+            "roc_curve": compute_roc_points(labels, probabilities),
+            "precision_recall_curve": compute_precision_recall_points(labels, probabilities),
+            "predictions": rows,
+        }
+    return results
+
+
 def main() -> None:
     args = parse_args()
     ensure_directory(args.output_dir)
 
     student_results = evaluate_student_experiments(args, args.output_dir)
     teacher_results = evaluate_teacher_experiments(args, args.output_dir)
-    combined = {**teacher_results, **student_results}
+    text_baseline_results = evaluate_text_baselines(args)
+    combined = {**teacher_results, **student_results, **text_baseline_results}
 
     summary_rows = []
     for name, payload in combined.items():

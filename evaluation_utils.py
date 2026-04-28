@@ -18,6 +18,7 @@ from sklearn.metrics import (
     roc_curve,
 )
 from torch.utils.data import DataLoader, Dataset
+from torch.optim import AdamW
 from transformers import DistilBertModel, DistilBertTokenizer
 import torchvision.transforms as transforms
 
@@ -230,6 +231,46 @@ def collate_samples(batch: Sequence[dict]) -> dict:
     }
 
 
+class TextOnlyDataset(Dataset):
+    def __init__(
+        self,
+        samples: Sequence[dict],
+        tokenizer: DistilBertTokenizer,
+        max_seq_len: int,
+    ) -> None:
+        self.samples = list(samples)
+        self.tokenizer = tokenizer
+        self.max_seq_len = max_seq_len
+
+    def __len__(self) -> int:
+        return len(self.samples)
+
+    def __getitem__(self, index: int) -> dict:
+        sample = self.samples[index]
+        encoding = self.tokenizer(
+            sample["text"],
+            truncation=True,
+            padding="max_length",
+            max_length=self.max_seq_len,
+            return_tensors="pt",
+        )
+        return {
+            "input_ids": encoding["input_ids"].squeeze(0),
+            "attention_mask": encoding["attention_mask"].squeeze(0),
+            "label": torch.tensor(sample["label"], dtype=torch.float32),
+            "meta": sample,
+        }
+
+
+def collate_text_samples(batch: Sequence[dict]) -> dict:
+    return {
+        "input_ids": torch.stack([item["input_ids"] for item in batch]),
+        "attention_mask": torch.stack([item["attention_mask"] for item in batch]),
+        "label": torch.stack([item["label"] for item in batch]),
+        "meta": [item["meta"] for item in batch],
+    }
+
+
 class ImageEncoder(nn.Module):
     def __init__(self, embed_dim: int = 128) -> None:
         super().__init__()
@@ -282,6 +323,29 @@ class StudentModel(nn.Module):
         return self.fc(combined).squeeze(1)
 
 
+class TextOnlyBaselineModel(nn.Module):
+    def __init__(
+        self,
+        text_embed_dim: int = 768,
+        hidden_dim: int = 256,
+        text_model_name: str = DEFAULT_CONFIG["text_model_name"],
+    ) -> None:
+        super().__init__()
+        self.text_encoder = DistilBertModel.from_pretrained(text_model_name)
+        self.classifier = nn.Sequential(
+            nn.Linear(text_embed_dim, hidden_dim),
+            nn.ReLU(),
+            nn.Dropout(0.2),
+            nn.Linear(hidden_dim, 1),
+            nn.Sigmoid(),
+        )
+
+    def forward(self, input_ids: torch.Tensor, attention_mask: torch.Tensor) -> torch.Tensor:
+        text_output = self.text_encoder(input_ids=input_ids, attention_mask=attention_mask)
+        cls_embedding = text_output.last_hidden_state[:, 0, :]
+        return self.classifier(cls_embedding).squeeze(1)
+
+
 def create_dataloader(
     dataset_path: str,
     batch_size: int = DEFAULT_CONFIG["batch_size"],
@@ -313,12 +377,46 @@ def create_dataloader(
     return samples, loader
 
 
+def create_text_dataloader(
+    dataset_path: str,
+    batch_size: int = DEFAULT_CONFIG["batch_size"],
+    max_seq_len: int = DEFAULT_CONFIG["max_seq_len"],
+    num_workers: int = DEFAULT_CONFIG["num_workers"],
+    text_model_name: str = DEFAULT_CONFIG["text_model_name"],
+    shuffle: bool = False,
+) -> Tuple[List[dict], DataLoader]:
+    samples = load_flattened_samples(dataset_path)
+    tokenizer = DistilBertTokenizer.from_pretrained(text_model_name)
+    dataset = TextOnlyDataset(samples, tokenizer, max_seq_len=max_seq_len)
+    loader = DataLoader(
+        dataset,
+        batch_size=batch_size,
+        shuffle=shuffle,
+        num_workers=num_workers,
+        collate_fn=collate_text_samples,
+    )
+    return samples, loader
+
+
 def load_student_model(
     checkpoint_path: str,
     device: torch.device,
     text_model_name: str = DEFAULT_CONFIG["text_model_name"],
 ) -> StudentModel:
     model = StudentModel(text_model_name=text_model_name)
+    state_dict = torch.load(checkpoint_path, map_location=device)
+    model.load_state_dict(state_dict)
+    model.to(device)
+    model.eval()
+    return model
+
+
+def load_text_only_model(
+    checkpoint_path: str,
+    device: torch.device,
+    text_model_name: str = DEFAULT_CONFIG["text_model_name"],
+) -> TextOnlyBaselineModel:
+    model = TextOnlyBaselineModel(text_model_name=text_model_name)
     state_dict = torch.load(checkpoint_path, map_location=device)
     model.load_state_dict(state_dict)
     model.to(device)
@@ -339,6 +437,35 @@ def predict_probabilities(
             attention_mask = batch["attention_mask"].to(device)
             images = batch["image"].to(device)
             outputs = model(input_ids, attention_mask, images).detach().cpu().numpy()
+
+            for meta, label, probability in zip(batch["meta"], batch["label"].numpy(), outputs):
+                labels.append(int(label))
+                probabilities.append(float(probability))
+                prediction_rows.append(
+                    {
+                        "id": meta.get("id"),
+                        "image_path": meta["image_path"],
+                        "text": meta["text"],
+                        "label": int(label),
+                        "probability": float(probability),
+                    }
+                )
+
+    return labels, probabilities, prediction_rows
+
+
+def predict_text_probabilities(
+    model: TextOnlyBaselineModel, loader: DataLoader, device: torch.device
+) -> Tuple[List[int], List[float], List[dict]]:
+    labels: List[int] = []
+    probabilities: List[float] = []
+    prediction_rows: List[dict] = []
+
+    with torch.no_grad():
+        for batch in loader:
+            input_ids = batch["input_ids"].to(device)
+            attention_mask = batch["attention_mask"].to(device)
+            outputs = model(input_ids, attention_mask).detach().cpu().numpy()
 
             for meta, label, probability in zip(batch["meta"], batch["label"].numpy(), outputs):
                 labels.append(int(label))
