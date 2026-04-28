@@ -165,8 +165,9 @@ def plot_confusion_matrices(summary: dict, output_dir: str) -> None:
     for idx in range(len(items), total_axes):
         axes[idx // cols, idx % cols].axis("off")
 
-    fig.colorbar(im, ax=axes, fraction=0.03, pad=0.03)
-    plt.tight_layout()
+    fig.subplots_adjust(left=0.08, right=0.88, top=0.92, bottom=0.08, wspace=0.35, hspace=0.4)
+    cbar_ax = fig.add_axes([0.9, 0.15, 0.02, 0.7])
+    fig.colorbar(im, cax=cbar_ax)
     plt.savefig(os.path.join(output_dir, "confusion_matrices.png"), dpi=200)
     plt.close()
 
