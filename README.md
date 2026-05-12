@@ -1,10 +1,10 @@
-# DDA4210 - 多教师知识蒸馏数据准备管道
+# DDA4210 - Multi-Teacher Knowledge Distillation Data Preparation Pipeline
 
-## 数据结构
+## Data Structure
 
-本项目使用统一的JSON数据格式，包含图像、文本描述、CLIP评分、InternVL模型输出和标签信息。
+This project uses a unified JSON data format that includes images, text descriptions, CLIP scores, InternVL model outputs, and label information.
 
-**示例数据：**
+**Example Data:**
 ```json
 {
   "id": 407368,
@@ -26,113 +26,101 @@
 }
 ```
 
-**字段说明：**
-- `id`：数据样本的唯一标识符
-- `image_path`：图像文件的相对路径
-- `text`：对应图像的文本描述
-- `clip`：CLIP模型输出
-  - `cosine`：余弦相似度（0-1）
-  - `prob`：这一张图片下所有文本中此文本的softmax概率。prob越大说明与这张图片越相关。但是prob低也不代表文字不符合这张图片。
-  - `rank`：此文本在这组文本中与图片的相关排名（1为最相关）
-- `internvl`：InternVL模型输出
-  - `score`：模型评分（0-1）
-  - `error_type`：错误类型（null表示无错误），类型有"subject_mismatch", "attribute_mismatch", "spatial_mismatch", "scene_mismatch", "semantic_mismatch"
-  - `reason`：模型的推理过程和分析说明
-- `ground_truth`：标签信息
-  - `label`：真实标签（0或1）
+**Field Descriptions:**
+- `id`: Unique identifier of the data sample
+- `image_path`: Relative path to the image file
+- `text`: Text description corresponding to the image
+- `clip`: CLIP model output
+  - `cosine`: Cosine similarity (0-1)
+  - `prob`: The softmax probability of this text among all texts for the same image. A higher `prob` means stronger relevance to the image. However, a low `prob` does not necessarily mean the text is inconsistent with the image.
+  - `rank`: Relevance rank of this text to the image within the text group (1 = most relevant)
+- `internvl`: InternVL model output
+  - `score`: Model score (0-1)
+  - `error_type`: Error type (`null` means no error). Possible values: "subject_mismatch", "attribute_mismatch", "spatial_mismatch", "scene_mismatch", "semantic_mismatch"
+  - `reason`: Model reasoning process and analytical explanation
+- `ground_truth`: Label information
+  - `label`: Ground-truth label (0 or 1)
 
 ---
 
-## 项目结构
+## Project Structure
 
-- **`generate_teacher_score.py`**：核心管道脚本，使用两个教师模型进行评分
-  - **CLIP**：从HuggingFace提取全局语义对齐（余弦相似度）
-  - **InternVL**：通过本地Ollama API提取细粒度逻辑推理和评分
-- **`data/`**：数据目录
-  - `train.json`, `val.json`, `test.json`：输入数据集
-  - `images/train2017/`：图像资源
-- **`output/`**：输出结果目录（JSONL格式）
-- **`data.json`**：清理后的输入数据集
+- **`generate_teacher_score.py`**: Core pipeline script that uses two teacher models for scoring
+  - **CLIP**: Extracts global semantic alignment (cosine similarity) from HuggingFace
+  - **InternVL**: Extracts fine-grained logical reasoning and scoring through the local Ollama API
+- **`data/`**: Data directory
+  - `train.json`, `val.json`, `test.json`: Input datasets
+  - `images/train2017/`: Image assets
+- **`output/`**: Output results directory (JSONL format)
+- **`data.json`**: Cleaned input dataset
 
 ---
 
-## 1️⃣ Ollama 安装和下载教程
+## 1️⃣ Ollama Installation and Model Download Guide
 
-### 1.1 Windows 安装
+### 1.1 Windows Installation
 
-#### 方法一：使用官方安装程序（推荐）
+#### Method 1: Official Installer (Recommended)
 
-1. 访问 [Ollama官网](https://ollama.ai)
-2. 点击 "Download" 按钮下载 Windows 安装程序
-3. 运行安装程序，按照提示完成安装
-4. 安装完成后，Ollama会自动在后台运行
+1. Visit the [Ollama website](https://ollama.ai)
+2. Click the "Download" button to download the Windows installer
+3. Run the installer and follow the prompts to complete installation
+4. After installation, Ollama will run in the background automatically
 
-#### 方法二：使用 Scoop（命令行安装）
+#### Method 2: Using Scoop (Command-Line Installation)
 
 ```powershell
 scoop install ollama
 ```
 
-### 1.2 下载 InternVL 模型
+### 1.2 Download the InternVL Model
 
-安装完Ollama后，打开PowerShell或CMD，运行以下命令下载InternVL模型：
-
-```bash
-ollama pull blaifa/InternVL3_5:8b
-```
-
-**说明：**
-- `blaifa/InternVL3_5:8b` 是8B参数的InternVL模型
-- 首次下载时会下载完整模型文件（约10-15GB），需要较长时间和网络连接
-- 模型会缓存在本地，后续启动会更快
-
-### 1.3 验证安装
+After installing Ollama, open PowerShell or CMD and run the following command to download the InternVL model:
 
 ```bash
-ollama list
+ollama pull blaifa/InternVL3:latest
 ```
 
-如果看到类似输出说明安装成功：
-```
-NAME                    ID              SIZE      MODIFIED
-blaifa/InternVL3_5:8b   abc123...       10.2GB    2 minutes ago
-```
+**Notes:**
+- `blaifa/InternVL3:latest` is the InternVL model
+- The first download retrieves the full model file (about 10-15 GB), which may take time and requires a stable network connection
+- The model is cached locally, so subsequent startups are faster
 
 ---
 
-## 2️⃣ Ollama 本地使用教程
+## 2️⃣ Local Ollama Usage Guide
 
-### 2.1 启动 Ollama 服务
+### 2.1 Start the Ollama Service
 
-#### 方法一：通过系统托盘（图形界面）
+#### Method 1: Via System Tray (GUI)
 
-- Ollama安装后会在系统托盘运行
-- 点击托盘图标可以查看状态
+- After installation, Ollama runs in the system tray
+- Click the tray icon to check status
 
-#### 方法二：通过命令行启动服务
+#### Method 2: Start Service via Command Line
 
 ```bash
 ollama serve
 ```
 
-这会在 `http://localhost:11434` 启动本地API服务
+This starts the local API service at `http://localhost:11434`
 
-### 2.2 运行模型
+### 2.2 Run the Model
 
 ```bash
-ollama run blaifa/InternVL3_5:8b
+ollama run blaifa/InternVL3:latest
 ```
 
-进入交互式对话模式，你可以直接输入问题：
+This enters interactive chat mode, where you can directly type prompts:
 ```
->>> 请描述这张图片
-<输入提示词>
+>>> Please describe this image
+<enter your prompt>
 >>> 
 ```
 
-### 2.3 API 调用
+### 2.3 API Call
 
-项目中使用Python通过HTTP API调用Ollama：
+In this project, Python calls Ollama through an HTTP API:
 
 ```python
 import requests
@@ -140,8 +128,8 @@ import requests
 response = requests.post(
     "http://localhost:11434/api/generate",
     json={
-        "model": "blaifa/InternVL3_5:8b",
-        "prompt": "你的提示词",
+        "model": "blaifa/InternVL3:latest",
+    "prompt": "your prompt",
         "stream": False
     }
 )
@@ -149,35 +137,35 @@ result = response.json()
 print(result['response'])
 ```
 
-**注意：** 确保Ollama服务已启动，API才能正常使用
+**Note:** Ensure the Ollama service is running before using the API.
 
 ---
 
-## 3️⃣ 项目使用教程
+## 3️⃣ Project Usage Guide
 
-### 3.1 环境准备
+### 3.1 Environment Setup
 
-#### 创建虚拟环境
+#### Create a Virtual Environment
 
-**Windows PowerShell：**
+**Windows PowerShell:**
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 
-**Windows Git Bash：**
+**Windows Git Bash:**
 ```bash
 python -m venv .venv
 source .venv/Scripts/activate
 ```
 
-#### 安装依赖
+#### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-若无requirements.txt，手动安装必要的包：
+If there is no `requirements.txt`, install required packages manually:
 ```bash
 pip install torch torchvision torchaudio
 pip install sentence-transformers
@@ -186,159 +174,159 @@ pip install requests
 pip install tqdm
 ```
 
-### 3.2 准备输入数据
+### 3.2 Prepare Input Data
 
-在 `data/` 目录下放置你的数据文件，按照上方"数据结构"部分的格式组织JSON文件。
+Place your data files in the `data/` directory and organize JSON files according to the format in the "Data Structure" section above.
 
-### 3.3 配置参数
+### 3.3 Configure Parameters
 
-编辑 `generate_teacher_score.py`，修改以下配置：
+Edit `generate_teacher_score.py` and update the following settings:
 
 ```python
-# 输入数据文件
+# Input data file
 INPUT_JSON_PATH = "data/val.json"
 
-# 输出结果文件
+# Output result file
 OUT_PATH = "output/val_scores.jsonl"
 
-# CLIP模型
+# CLIP model
 CLIP_MODEL_ID = "sentence-transformers/clip-ViT-B-32"
 
-# Ollama配置
+# Ollama settings
 OLLAMA_API_URL = "http://localhost:11434/api/generate"
-OLLAMA_MODEL_NAME = "blaifa/InternVL3_5:8b"
+OLLAMA_MODEL_NAME = "blaifa/InternVL3:latest"
 ```
 
-### 3.4 启动 Ollama 服务
+### 3.4 Start the Ollama Service
 
-运行脚本前，**必须**启动Ollama服务：
+Before running the script, you **must** start the Ollama service:
 
 ```bash
-ollama run blaifa/InternVL3_5:8b
+ollama run blaifa/InternVL3:latest
 ```
 
-或者如果已在后台运行，确保服务在 `http://localhost:11434` 可访问
+Or, if it is already running in the background, ensure the service at `http://localhost:11434` is accessible.
 
-### 3.5 运行评分管道
+### 3.5 Run the Scoring Pipeline
 
 ```bash
 python generate_teacher_score.py
 ```
 
-脚本会：
-1. 加载CLIP模型
-2. 逐条处理数据
-3. 计算CLIP相似度分数
-4. 调用InternVL获取推理过程和细节评分
-5. 将结果保存到 `output/val_scores.jsonl`
+The script will:
+1. Load the CLIP model
+2. Process data sample by sample
+3. Compute CLIP similarity scores
+4. Call InternVL to obtain reasoning and detailed scores
+5. Save results to `output/val_scores.jsonl`
 
-### 3.6 输出格式
+### 3.6 Output Format
 
-输出JSONL文件格式（每行一个JSON对象）：
+Output is in JSONL format (one JSON object per line):
 
 ```json
 {
   "image_path": "images/train2017/image_001.jpg",
-  "texts": ["描述文本1", "描述文本2", "描述文本3"],
+  "texts": ["description text 1", "description text 2", "description text 3"],
   "label": 0,
   "clip_scores": [
     {"cosine": 0.7234, "prob": 0.4521, "rank": 1},
     {"cosine": 0.6891, "prob": 0.3245, "rank": 2},
     {"cosine": 0.5123, "prob": 0.2234, "rank": 3}
   ],
-  "internvl_response": "模型的推理过程和分析...",
+  "internvl_response": "model reasoning process and analysis...",
   "internvl_detail_score": 0.85
 }
 ```
 
 ---
 
-## 🐛 常见问题
+## 🐛 Frequently Asked Questions
 
-### 问题1：无法连接到Ollama
+### Issue 1: Unable to Connect to Ollama
 
-**症状：**
+**Symptom:**
 ```
 requests.exceptions.ConnectionError: Failed to establish a new connection
 ```
 
-**解决方案：**
-1. 确保Ollama服务已启动：`ollama run blaifa/InternVL3_5:8b`
-2. 检查API地址是否正确（默认：`http://localhost:11434`）
-3. 检查防火墙是否阻止了本地连接
+**Solution:**
+1. Ensure the Ollama service is running: `ollama run blaifa/InternVL3:latest`
+2. Check whether the API URL is correct (default: `http://localhost:11434`)
+3. Check whether the firewall is blocking local connections
 
-### 问题2：模型加载失败
+### Issue 2: Model Load Failure
 
-**症状：**
+**Symptom:**
 ```
-Error: model 'blaifa/InternVL3_5:8b' not found
-```
-
-**解决方案：**
-1. 下载模型：`ollama pull blaifa/InternVL3_5:8b`
-2. 验证模型：`ollama list`
-
-### 问题3：内存不足
-
-**症状：**
-```
-CUDA out of memory 或 Memory allocation failed
+Error: model 'blaifa/InternVL3:latest' not found
 ```
 
-**解决方案：**
-- 减少批处理大小（在脚本中调整）
-- 关闭其他程序释放内存
+**Solution:**
+1. Download the model: `ollama pull blaifa/InternVL3:latest`
+2. Verify the model: `ollama list`
 
-### 问题4：网络超时
+### Issue 3: Out of Memory
 
-**症状：**
+**Symptom:**
+```
+CUDA out of memory or Memory allocation failed
+```
+
+**Solution:**
+- Reduce batch size (adjust in the script)
+- Close other programs to free memory
+
+### Issue 4: Network Timeout
+
+**Symptom:**
 ```
 requests.exceptions.ReadTimeout
 ```
 
-**解决方案：**
-在 `generate_teacher_score.py` 中增加超时时间：
+**Solution:**
+Increase the timeout in `generate_teacher_score.py`:
 ```python
-ollama_session.request(..., timeout=300)  # 5分钟超时
+ollama_session.request(..., timeout=300)  # 5-minute timeout
 ```
 
 ---
 
-## 📋 依赖包列表
+## 📋 Dependency List
 
-| 包名 | 版本 | 用途 |
+| Package | Version | Purpose |
 |------|------|------|
-| torch | 2.0+ | 深度学习框架 |
-| sentence-transformers | 2.2+ | CLIP模型加载 |
-| Pillow | 10.0+ | 图像处理 |
-| requests | 2.31+ | HTTP请求（Ollama API） |
-| tqdm | 4.65+ | 进度条显示 |
+| torch | 2.0+ | Deep learning framework |
+| sentence-transformers | 2.2+ | CLIP model loading |
+| Pillow | 10.0+ | Image processing |
+| requests | 2.31+ | HTTP requests (Ollama API) |
+| tqdm | 4.65+ | Progress bar display |
 
 ---
 
-## 📝 使用示例
+## 📝 Usage Example
 
-完整的工作流程：
+Complete workflow:
 
 ```bash
-# 1. 激活虚拟环境
+# 1. Activate the virtual environment
 source .venv/Scripts/activate
 
-# 2. 启动Ollama服务（新终端窗口）
-ollama run blaifa/InternVL3_5:8b
+# 2. Start the Ollama service (in a new terminal window)
+ollama run blaifa/InternVL3:latest
 
-# 3. 运行评分脚本
+# 3. Run the scoring script
 python generate_teacher_score.py
 
-# 4. 查看结果
+# 4. Check results
 cat output/val_scores.jsonl | head -n 1
 ```
 
 ---
 
-## 📚 参考资源
+## 📚 Reference Resources
 
-- [Ollama 官网](https://ollama.ai)
+- [Ollama Official Website](https://ollama.ai)
 - [InternVL GitHub](https://github.com/OpenGVLab/InternVL)
-- [CLIP 文档](https://github.com/openai/CLIP)
+- [CLIP Documentation](https://github.com/openai/CLIP)
 - [Sentence Transformers](https://www.sbert.net/)

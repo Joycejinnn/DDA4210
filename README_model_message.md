@@ -1,23 +1,23 @@
-# 📊 训练状态总结
+# 📊 Training Status Summary
 
-| 项目 | 数值 | 说明 |
+| Item | Value | Description |
 |------|------|------|
-| **设备** | CPU | 你的训练完全在 CPU 上进行（没有检测到 GPU） |
-| **加载样本数** | 5580 | 教师评分文件中有 5580 条有效图文对 |
-| **融合权重 α** | 0.8 | InternVL3 教师占 80%，CLIP 占 20% |
-| **示例软标签** | 0.8030 | 第一个样本的融合教师分数（接近 0.8） |
-| **训练集大小** | 5022 | 90% 数据用于训练 |
-| **验证集大小** | 558 | 10% 数据用于验证 |
-| **学生模型加载** | DistilBERT | 文本编码器为 `distilbert-base-uncased` |
+| **Device** | CPU | Your training ran entirely on CPU (no GPU detected). |
+| **Loaded Samples** | 5580 | There are 5,580 valid image-text pairs in the teacher score file. |
+| **Fusion Weight α** | 0.8 | InternVL3 teacher contributes 80%, and CLIP contributes 20%. |
+| **Example Soft Label** | 0.8030 | The fused teacher score of the first sample (close to 0.8). |
+| **Training Set Size** | 5022 | 90% of the data is used for training. |
+| **Validation Set Size** | 558 | 10% of the data is used for validation. |
+| **Loaded Student Model** | DistilBERT | The text encoder is `distilbert-base-uncased`. |
 
-# 📦 关于模型大小
+# 📦 About Model Size
 
-从输出中这一行：
+From this output line:
 model.safetensors: 100% | 268M/268M [02:28<00:00, 1.80MB/s]
 
-可以明确看出：`distilbert-base-uncased` 模型的权重文件大小为 **268 MB**。
+it is clear that the weight file size of the `distilbert-base-uncased` model is **268 MB**.
 
-- 这个 268 MB 是保存的 safetensors 格式文件大小，包含了模型的所有参数。
-- 实际的参数量约为 **66 million（6600万）**，因为 DistilBERT 是 BERT 的轻量版本，参数量只有 BERT-base 的一半左右。
-- 268 MB 的磁盘占用是合理的：保存时使用了 32 位浮点数，每个参数占 4 字节，66M × 4B ≈ 264 MB，加上一些额外信息正好 268 MB。
+- This 268 MB is the saved safetensors file size, which contains all model parameters.
+- The actual parameter count is about **66 million**, because DistilBERT is a lightweight version of BERT with roughly half the parameters of BERT-base.
+- A disk size of 268 MB is reasonable: weights are stored in 32-bit floating point format, each parameter takes 4 bytes, so $66M \times 4B \approx 264$ MB, and with additional metadata it becomes 268 MB.
 

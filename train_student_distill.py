@@ -12,11 +12,11 @@ import torchvision.transforms as transforms
 from tqdm import tqdm
 import numpy as np
 
-# ----------------------------- 配置 -----------------------------
+# ----------------------------- Configuration -----------------------------
 CONFIG = {
     "teacher_scores_file": "output/train_scores.jsonl",
-    "image_root": "",          # 图片根目录（因为jsonl中已是相对路径，留空）
-    "alpha": 0.75,              # InternVL3权重
+    "image_root": "",          # Image root directory (leave empty because paths in jsonl are already relative)
+    "alpha": 0.75,              # InternVL3 weight
     "batch_size": 32,
     "epochs": 20,
     "lr": 1e-5,
@@ -30,9 +30,9 @@ CONFIG = {
     "seed": 42,
 }
 
-# ----------------------------- 1. 加载教师分数 -----------------------------
+# ----------------------------- 1. Load Teacher Scores -----------------------------
 def load_teacher_scores(file_path):
-    """从jsonl提取 clip.prob 和 internvl.score，并保留真实标签（供后续评估用，但本脚本不评估）"""
+    """Extract clip.prob and internvl.score from jsonl, and retain ground-truth labels (for later evaluation, though this script does not evaluate)."""
     data = []
     with open(file_path, 'r', encoding='utf-8') as f:
         for line in f:
@@ -51,13 +51,13 @@ def load_teacher_scores(file_path):
     return data
 
 def compute_soft_labels(data, alpha):
-    """加权平均融合"""
+    """Weighted average fusion."""
     for item in data:
         soft = alpha * item['internvl3_score'] + (1 - alpha) * item['clip_score']
         item['teacher_soft_label'] = soft
     return data
 
-# ----------------------------- 2. 数据集 -----------------------------
+# ----------------------------- 2. Dataset -----------------------------
 class MatchDataset(Dataset):
     def __init__(self, data, tokenizer, image_transform, image_root=''):
         self.data = data
@@ -72,14 +72,14 @@ class MatchDataset(Dataset):
         item = self.data[idx]
         text = item['text']
         img_path = item['image_path']
-        # 如果image_root非空且路径不是绝对路径，则拼接
+        # If image_root is not empty and the path is not absolute, join them.
         if self.image_root and not os.path.isabs(img_path):
             img_path = os.path.join(self.image_root, img_path)
         try:
             image = Image.open(img_path).convert('RGB')
             image = self.image_transform(image)
         except Exception as e:
-            # 出错时用黑图代替
+            # Use a black image as fallback when an error occurs.
             image = torch.zeros(3, CONFIG['image_size'], CONFIG['image_size'])
 
         encoding = self.tokenizer(
@@ -94,7 +94,7 @@ class MatchDataset(Dataset):
         soft_label = torch.tensor(item['teacher_soft_label'], dtype=torch.float32)
         return input_ids, attention_mask, image, soft_label
 
-# ----------------------------- 3. 学生模型 -----------------------------
+# ----------------------------- 3. Student Model -----------------------------
 class ImageEncoder(nn.Module):
     def __init__(self, embed_dim=128):
         super().__init__()
@@ -133,7 +133,7 @@ class StudentModel(nn.Module):
         combined = torch.cat([text_feat, img_feat], dim=1)
         return self.fc(combined).squeeze(1)
 
-# ----------------------------- 4. 训练函数（仅含损失，无分类指标）--------------------
+# ----------------------------- 4. Training Functions (Loss Only, No Classification Metrics) --------------------
 def train_one_epoch(model, loader, optimizer, device):
     model.train()
     total_loss = 0
@@ -145,7 +145,7 @@ def train_one_epoch(model, loader, optimizer, device):
 
         optimizer.zero_grad()
         outputs = model(input_ids, attn_mask, images)
-        loss = F.mse_loss(outputs, labels)   # 蒸馏损失：学生输出拟合教师软标签
+        loss = F.mse_loss(outputs, labels)   # Distillation loss: student outputs fit teacher soft labels.
         loss.backward()
         optimizer.step()
         total_loss += loss.item()
@@ -153,7 +153,7 @@ def train_one_epoch(model, loader, optimizer, device):
 
 @torch.no_grad()
 def validate(model, loader, device):
-    """只计算验证损失（MSE），不计算任何分类指标"""
+    """Compute validation loss (MSE) only, without any classification metrics."""
     model.eval()
     total_loss = 0
     for input_ids, attn_mask, images, labels in loader:
@@ -166,7 +166,7 @@ def validate(model, loader, device):
         total_loss += loss.item()
     return total_loss / len(loader)
 
-# ----------------------------- 5. 主程序 -----------------------------
+# ----------------------------- 5. Main Program -----------------------------
 def main():
     torch.manual_seed(CONFIG['seed'])
     np.random.seed(CONFIG['seed'])
@@ -174,12 +174,12 @@ def main():
     device = torch.device(CONFIG['device'])
     print(f"Using device: {device}")
 
-    # 加载数据并融合
+    # Load data and fuse teacher scores.
     raw_data = load_teacher_scores(CONFIG['teacher_scores_file'])
     data = compute_soft_labels(raw_data, CONFIG['alpha'])
     print(f"Alpha={CONFIG['alpha']}, sample soft label: {data[0]['teacher_soft_label']:.4f}")
 
-    # 划分训练/验证
+    # Split into training and validation sets.
     np.random.shuffle(data)
     val_size = int(len(data) * CONFIG['val_ratio'])
     train_data = data[val_size:]

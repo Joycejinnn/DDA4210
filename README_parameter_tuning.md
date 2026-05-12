@@ -1,51 +1,51 @@
-## 调参思路与过程
+## Parameter Tuning Strategy and Process
 
-### 一、调参目标
-在多教师知识蒸馏中，融合权重 α 决定了 InternVL3-8B 教师与 CLIP 教师软标签的占比：  
+### 1. Tuning Objective
+In multi-teacher knowledge distillation, the fusion weight $\alpha$ determines the proportion between soft labels from the InternVL3-8B teacher and the CLIP teacher:  
 `soft_label = α · score_internvl + (1-α) · score_clip`  
-同时，学习率影响学生模型的收敛速度和最终性能。调参目标是最小化验证集 MSE 并最大化准确率。
+At the same time, the learning rate affects the convergence speed and final performance of the student model. The tuning objective is to minimize validation MSE while maximizing accuracy.
 
-### 二、调参思路
-1. **固定学习率为 2e-5**，先探索不同 α 值（0.65、0.7、0.73、0.75、0.8）对蒸馏效果的影响。  
-2. 根据初步结果，选择较优的 α 范围（0.7~0.75），然后**降低学习率至 1e-5**，重新训练 α=0.7、0.73、0.75，观察是否进一步提升。  
-3. 最后尝试**三个最佳模型的集成**（简单平均预测），检验集成能否超越单模型。
+### 2. Tuning Strategy
+1. **Fix the learning rate at 2e-5** and first explore the effect of different $\alpha$ values (0.65, 0.7, 0.73, 0.75, 0.8) on distillation performance.  
+2. Based on preliminary results, select the better $\alpha$ range (0.7-0.75), then **reduce the learning rate to 1e-5**, retrain with $\alpha$ = 0.7, 0.73, and 0.75, and observe whether performance improves further.  
+3. Finally, try **ensembling the three best models** (simple average prediction) to test whether ensemble performance can exceed that of a single model.
 
-### 三、实验数据记录
+### 3. Experimental Records
 
-#### 第一阶段：默认学习率 (2e-5) 下不同 α 的验证损失（MSE against soft labels）
+#### Stage 1: Validation Loss for Different $\alpha$ Values under Default Learning Rate (2e-5) (MSE against soft labels)
 
-| α 值 | 最佳验证损失 (MSE) | 达到 epoch | 备注 |
+| α Value | Best Validation Loss (MSE) | Epoch Reached | Notes |
 |------|-------------------|------------|------|
-| 0.65 | 0.0101            | 2          | 一般 |
-| 0.7  | **0.0100**        | 2          | 稳定 |
-| 0.73 | 0.0100            | 2 或 6     | 与 0.7 持平 |
-| 0.75 | **0.0100**        | 2          | 略优 |
-| 0.8  | 0.0102            | 6          | 稍差 |
+| 0.65 | 0.0101            | 2          | Average |
+| 0.7  | **0.0100**        | 2          | Stable |
+| 0.73 | 0.0100            | 2 or 6     | On par with 0.7 |
+| 0.75 | **0.0100**        | 2          | Slightly better |
+| 0.8  | 0.0102            | 6          | Slightly worse |
 
-> 注：验证损失为 MSE（预测值 vs 教师软标签），越低越好。所有 α 在 2~6 个 epoch 内即可收敛。
+> Note: Validation loss is MSE (predictions vs teacher soft labels), where lower is better. All $\alpha$ values converged within 2-6 epochs.
 
-#### 第二阶段：降低学习率至 1e-5 后重新训练 α=0.7、0.73、0.75
+#### Stage 2: Retraining with $\alpha$ = 0.7, 0.73, 0.75 after Reducing Learning Rate to 1e-5
 
-| α 值 | 验证集 MSE (vs 真实标签) | 准确率 (Accuracy) |
+| α Value | Validation MSE (vs Ground Truth Labels) | Accuracy |
 |------|--------------------------|-------------------|
 | 0.70 | 0.0509                   | 98.57%            |
 | 0.73 | 0.0404                   | 98.75%            |
 | 0.75 | **0.0361**               | **98.92%**        |
 
-> 评估使用 `compare_models.py`，基于真实标签（0/1），验证集包含 348 个正例和 210 个负例。
+> Evaluation used `compare_models.py`, based on ground-truth labels (0/1). The validation set contains 348 positive samples and 210 negative samples.
 
-#### 第三阶段：集成模型
+#### Stage 3: Ensemble Model
 
-| 模型 | MSE (vs 真实标签) | 准确率 |
+| Model | MSE (vs Ground Truth Labels) | Accuracy |
 |------|------------------|--------|
-| 简单平均集成（α=0.7,0.73,0.75） | 0.0422 | 98.75% |
+| Simple average ensemble ($\alpha$=0.7, 0.73, 0.75) | 0.0422 | 98.75% |
 
-集成效果略低于最佳单模型（α=0.75）。
+Ensemble performance is slightly lower than that of the best single model ($\alpha$=0.75).
 
-### 四、结论
+### 4. Conclusion
 
-1. **α 值影响**：α 在 0.7~0.75 之间时，蒸馏效果最佳；过大（0.8）或过小（0.65）均会略降低性能。InternVL3 教师权重过高会丢失 CLIP 的互补信息，过低则不能充分利用大模型的能力。  
-2. **学习率影响**：从 2e-5 降至 1e-5 后，模型在真实标签上的准确率从约 98.5% 提升至 98.9%，且 MSE 明显降低，说明更小的学习率有助于精调学生模型。  
-3. **集成效果**：三个模型简单平均未能超越最佳单模型，可能因为模型预测分布差异较大，简单平均反而引入噪声。若采用加权平均（按验证 MSE 赋权）可能略有改善，但收益有限。  
+1. **Impact of $\alpha$**: Distillation performs best when $\alpha$ is between 0.7 and 0.75. If it is too large (0.8) or too small (0.65), performance drops slightly. An overly high InternVL3 teacher weight loses CLIP's complementary information, while an overly low weight fails to fully leverage the large model's capability.  
+2. **Impact of Learning Rate**: After reducing the learning rate from 2e-5 to 1e-5, accuracy against ground-truth labels improved from about 98.5% to 98.9%, and MSE decreased significantly, indicating that a smaller learning rate helps fine-tune the student model.  
+3. **Ensemble Effect**: Simple averaging of three models did not outperform the best single model, possibly because the prediction distributions differ considerably, and simple averaging introduces noise instead. A weighted average (weighted by validation MSE) might offer slight improvement, but expected gains are limited.  
 
-**最终选用 α=0.75、学习率 1e-5 训练的学生模型**，其在验证集上达到 **98.92% 的准确率**，MSE 为 0.0361，推理速度快（CPU <0.1s），满足轻量化部署需求。
+**The final selected student model is trained with $\alpha$=0.75 and learning rate 1e-5**, achieving **98.92% accuracy** and MSE of 0.0361 on the validation set, with fast inference speed (CPU <0.1s), meeting lightweight deployment requirements.
