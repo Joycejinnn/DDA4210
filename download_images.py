@@ -3,6 +3,8 @@ import json
 import urllib.request
 from tqdm import tqdm
 
+git add our_dataset_v2/
+
 # COCO 2017 训练集图片的 URL 模板（官方地址，速度快）
 URL_TEMPLATE = "http://images.cocodataset.org/train2017/{file_name}"
 
