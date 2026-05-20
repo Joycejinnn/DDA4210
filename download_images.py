@@ -5,14 +5,14 @@ from tqdm import tqdm
 
 git add our_dataset_v2/
 
-# COCO 2017 训练集图片的 URL 模板（官方地址，速度快）
+# Official high-speed URL template of COCO 2017 train images
 URL_TEMPLATE = "http://images.cocodataset.org/train2017/{file_name}"
 
-# 读取 JSON 文件（train/val/test 任一个即可，因为都指向相同的图片）
+# Read JSON files (train/val/test are all applicable, as they point to identical images)
 with open('data/train.json', 'r') as f:
     data = json.load(f)
 
-# 收集所有需要用到的图片文件名
+# Collect all required image filenames
 image_files = set()
 for item in data:
     path = item['image']['path']
@@ -21,17 +21,17 @@ for item in data:
 
 print(f"需要下载 {len(image_files)} 张图片")
 
-# 创建存放图片的目录
+# Create directory for storing images
 os.makedirs('data/images/train2017', exist_ok=True)
 
-# 逐张下载（带进度条）
+# Download images one by one with progress bar
 for file_name in tqdm(image_files):
     url = URL_TEMPLATE.format(file_name=file_name)
     save_path = f'data/images/train2017/{file_name}'
     if not os.path.exists(save_path):
         urllib.request.urlretrieve(url, save_path)
 
-print("所有图片下载完成！")
+print("All images downloaded successfully！")
 
 
 """
