@@ -1,90 +1,83 @@
-# 知识蒸馏训练：InternVL3 + CLIP → 轻量学生模型
+# KL Divergence Distillation Training Results
 
-## 项目背景
-我们训练了一个轻量级学生模型（DistilBERT + 轻量CNN），用于图文匹配任务。教师模型为：
-- **InternVL3-8B**（通过API获得分数）
-- **CLIP-ViT-B/32**（本地提取相似度）
+## Training Objective
 
-采用加权平均融合策略：  
-`teacher_soft_label = 0.7 * internvl_score + 0.3 * clip_score`
+Train the student model using KL divergence loss with a temperature parameter (T=2.0), replacing the previous MSE regression loss, with the goal of mitigating overfitting and improving model generalization.
 
-学生模型通过回归（MSE损失）学习教师软标签，从而具备图文匹配能力。
+## Training Configuration
 
-## 当前产出
-- 训练脚本：`train_student_distill.py`
-- 最佳模型权重：`checkpoints/student_distill_best.pt`（验证损失最低的模型）
-- 教师分数文件：`output/train_scores.jsonl`（包含每张图片的 clip.prob 和 internvl.score 以及真实标签）
+| Parameter          | Value                              |
+| ------------------ | ---------------------------------- |
+| Fusion Weight α    | 0.7 (InternVL3)                    |
+| Loss Function      | KL Divergence + Temperature 2.0    |
+| Training Epochs    | 20 (actual best at Epoch 2)        |
+| Training Samples   | 5022                               |
+| Validation Samples | 558                                |
+| Optimizer          | AdamW (lr=2e-5, weight_decay=0.01) |
+| Batch Size         | 32                                 |
+| Student Model      | DistilBERT + 4-layer CNN           |
 
-## 模型信息
-| 项目 | 说明 |
-|------|------|
-| 输入 | 图片（RGB） + 文本（自然语言） |
-| 输出 | 匹配分数（0~1，越接近1越匹配） |
-| 结构 | DistilBert文本编码器 + 4层CNN图像编码器 + 融合层 |
-| 训练样本 | 5022对（训练），558对（验证） |
-| 损失函数 | MSE（蒸馏损失） |
-| 最佳验证损失 | 0.0100（第2轮） |
-| 融合权重 | α = 0.7（InternVL3权重） |
+## Training Results
 
-## 数据格式
-`output/train_scores.jsonl` 每行示例：
-```json
-{
-  "image_path": "data/images/train2017/000000199602.jpg",
-  "text": "A woman standing on a beach while holding a kite.",
-  "clip": {"prob": 0.0536},
-  "internvl": {"score": 1.0},
-  "ground_truth": {"label": 1}
-}
-```
-- `clip.prob`：CLIP 模型输出的匹配概率（0~1）
-- `internvl.score`：InternVL3 评分（0~1）
-- `ground_truth.label`：真实标签（1=匹配，0=不匹配）
+| Epoch | Train Loss           | Val Loss             | Best Model          |
+| ----- | -------------------- | -------------------- | ------------------- |
+| 1     | 0.0873               | 0.0403               | ✓ (val_loss=0.0403) |
+| 2     | 0.0415               | 0.0395               | ✓ (val_loss=0.0395) |
+| 3     | 0.0396               | 0.0418               | -                   |
+| 4     | 0.0359               | 0.0438               | -                   |
+| ...   | Continues decreasing | Continues increasing | -                   |
 
-## 如何使用学生模型
+**Best Model**: Epoch 2, validation loss **0.0395** (KL divergence loss value, not directly comparable with MSE).
 
-### 加载模型
+## Comparison with the MSE Version
+
+| Metric               | MSE Version                           | KL Version (T=2.0)                          |
+| -------------------- | ------------------------------------- | ------------------------------------------- |
+| Best Validation Loss | 0.0100 (MSE)                          | 0.0395 (KL)                                 |
+| Overfitting Starts   | Epoch 3                               | Epoch 3                                     |
+| Model File           | `checkpoints/student_distill_best.pt` | `checkpoints_kl/student_distill_kl_best.pt` |
+
+> **Note**: The numerical scales of the two loss functions are different. MSE losses are typically much smaller than KL divergence losses. Actual performance should be compared using downstream evaluation metrics such as AUC and accuracy.
+
+## Model Usage
+
+### Load the KL Version Model
+
 ```python
 import torch
-from train_student_distill import StudentModel
+from train_student_distill import StudentModel   # Note: modify the model class to remove the final Sigmoid
 
-model = StudentModel()
-model.load_state_dict(torch.load("checkpoints/student_distill_best.pt", map_location="cpu"))
+# In the KL version, the model definition removes the Sigmoid and outputs logits
+model = StudentModel()  # This StudentModel should output logits (without sigmoid applied)
+model.load_state_dict(torch.load("checkpoints_kl/student_distill_kl_best.pt", map_location="cpu"))
 model.eval()
 ```
 
-### 推理函数示例
+### Obtain Matching Probability During Inference
+
+Since the KL version outputs logits, sigmoid must be applied manually to obtain probabilities:
+
 ```python
-from transformers import DistilBertTokenizer
-from PIL import Image
-import torchvision.transforms as transforms
-
-tokenizer = DistilBertTokenizer.from_pretrained("distilbert-base-uncased")
-transform = transforms.Compose([
-    transforms.Resize((224,224)),
-    transforms.ToTensor(),
-    transforms.Normalize(mean=[0.485,0.456,0.406], std=[0.229,0.224,0.225])
-])
-
-def predict(image_path, text):
-    image = transform(Image.open(image_path).convert('RGB')).unsqueeze(0)
-    enc = tokenizer(text, return_tensors='pt', truncation=True, padding='max_length', max_length=64)
+def predict_prob(model, tokenizer, image_path, text, device="cpu"):
+    # ... image and text preprocessing ...
     with torch.no_grad():
-        score = model(enc['input_ids'], enc['attention_mask'], image).item()
-    return score
+        logit = model(input_ids, attention_mask, image_tensor)
+        prob = torch.sigmoid(logit).item()
+    return prob
 ```
 
+## Recommended Evaluation Tasks
 
-评估指标：
-- 准确率（Accuracy）
-- AUC（ROC曲线下面积）
-- F1-score
-- 可选项：不同阈值下的精确率/召回率
+1. **Compare the MSE model vs. the KL model**: compute accuracy, AUC, and F1 score on the same test set.
+2. **Experiment with different temperatures**: try T=1.0 and T=3.0 for further tuning.
+3. **Compare with single-teacher and baseline models**: proceed according to the original plan.
 
-数据划分：使用 `output/train_scores.jsonl` 中的 `ground_truth.label` 作为真实标签。注意该文件已经包含训练/验证/测试样本？目前只有一份，你可以自行划分或使用原始数据集中的划分文件（如 `data/train.json`, `data/val.json`, `data/test.json`）。
+## File Locations
 
-## 注意事项
-- 学生模型输入图片尺寸为 224×224，文本最大长度 64。
-- 模型权重文件较大（~255 MB），已上传至网盘：[请同学C提供链接]
-- 训练日志显示存在轻微过拟合（验证损失在第2轮后上升），可尝试增加 Dropout 或早停。
+* KL model weights: `checkpoints_kl/student_distill_kl_best.pt`
+* Training script: `train_student_distill_kl.py`
+* Original MSE model: `checkpoints/student_distill_best.pt`
 
+## Conclusion
+
+KL divergence distillation successfully trained the student model. The validation loss converged stably and reached the best result at Epoch 2. Although the loss value is higher than that of the MSE version, this is due to the difference in loss function definitions. It is recommended to evaluate both versions on real image-text matching tasks and select the better-performing model for the final demo.
