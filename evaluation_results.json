@@ -1,0 +1,10 @@
+{
+  "status": "pending_real_evaluation",
+  "message": "This file is now a placeholder. Run compare_experiments.py or evaluate_student_model.py after adding real checkpoints and optional teacher score files.",
+  "expected_outputs": [
+    "evaluation_outputs/compare_experiments/comparison_summary.json",
+    "evaluation_outputs/compare_experiments/comparison_summary.csv",
+    "evaluation_outputs/compare_experiments/figures/metric_bars.png",
+    "evaluation_outputs/compare_experiments/figures/roc_curves.png"
+  ]
+}
